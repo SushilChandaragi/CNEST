@@ -1,20 +1,69 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# CNEST - Centre for Next Gen Entrepreneurship
 
-# Run and deploy your AI Studio app
+Official website for CNEST Incubation Center at KLE Technological University, Belgaum.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1-vpV4lIm7g5GUrQ9LjZX1r00YnyWI1US
+- Modern React + Vite setup
+- Responsive landing page with sections:
+  - Hero
+  - About
+  - Achievements
+  - Services
+  - Team
+  - Contact
+- Tailwind CSS for styling
+- TypeScript for type safety
+- Lucide React icons
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- [Node.js](https://nodejs.org/) (v16+ recommended)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Setup
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Set up environment variables:**
+   - Copy your Gemini API key into `.env.local`:
+     ```
+     GEMINI_API_KEY=your_api_key_here
+     ```
+
+3. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   - Visit [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
+
+```sh
+npm run build
+```
+
+### Preview Production Build
+
+```sh
+npm run preview
+```
+
+## Project Structure
+
+- `App.tsx` - Main app layout and routing
+- `components/` - All UI sections (Hero, About, Services, Achievements, Team, Contact, Footer, Header)
+- `constants.tsx` - Navigation, services, and contact info
+- `types.ts` - TypeScript interfaces
+- `vite.config.ts` - Vite configuration
+- `tsconfig.json` - TypeScript configuration
+
+## License
+
+This project is for educational and demonstration purposes.
