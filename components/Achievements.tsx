@@ -3,7 +3,7 @@ import { Award } from 'lucide-react';
 
 const Achievements: React.FC = () => {
   return (
-    <section id="achievements" className="py-20 bg-white">
+    <section id="achievements" className="py-20 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-yellow-500 to-orange-600 shadow-2xl">
           <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>

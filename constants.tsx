@@ -12,12 +12,11 @@ import {
 } from 'lucide-react';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Achievements', href: '#achievements' },
-  { label: 'Team', href: '#team' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export const SERVICES: ServiceItem[] = [
@@ -53,11 +52,5 @@ export const SERVICES: ServiceItem[] = [
   },
 ];
 
-export const TEAM_MEMBERS: TeamMember[] = [
-  { name: 'Dr. Leader Name', role: 'Director', image: 'https://picsum.photos/200/200?random=1' },
-  { name: 'Prof. Co-Lead', role: 'Head of Operations', image: 'https://picsum.photos/200/200?random=2' },
-  { name: 'Expert Name', role: 'Technical Advisor', image: 'https://picsum.photos/200/200?random=3' },
-  { name: 'Manager Name', role: 'Community Manager', image: 'https://picsum.photos/200/200?random=4' },
-];
-
-export const CONTACT_LINK = "https://forms.gle/BRL3qLoXRQyJ1vde6"; // Placeholder for Google Form
+// Contact link for application form
+export const CONTACT_LINK = "mailto:info@cnest.in";

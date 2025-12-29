@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { CONTACT_LINK } from '../constants';
 
 const Contact: React.FC = () => {
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
                   <p className="text-blue-200 mt-1">
                     CNEST, CTIE Office<br />
                     KLE Technological University<br />
-                    Udyambagh, Belgaum, Karnataka
+                    Udyambagh, Belagavi, Karnataka
                   </p>
                 </div>
               </div>
@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                 <Mail className="w-6 h-6 text-blue-400 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-white">Email Us</h4>
-                  <p className="text-blue-200 mt-1">contact@cnest.kle.edu</p>
+                  <p className="text-blue-200 mt-1">info@cnest.in</p>
                 </div>
               </div>
             </div>
@@ -39,20 +39,15 @@ const Contact: React.FC = () => {
           <div className="bg-gray-50 md:w-1/2 p-10 md:p-16 flex flex-col justify-center items-center text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Apply for Incubation</h3>
             <p className="text-gray-600 mb-8">
-              Fill out our inquiry form and our team will get back to you with the next steps.
+              Ready to join CNEST? Contact us to learn more about our incubation programs and support services.
             </p>
             <a 
               href={CONTACT_LINK} 
-              target="_blank" 
-              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1"
             >
-              Fill Google Form
-              <ExternalLink className="ml-2 w-5 h-5" />
+              Contact Us
+              <Mail className="ml-2 w-5 h-5" />
             </a>
-            <p className="mt-6 text-sm text-gray-400">
-              *By clicking, you will be redirected to Google Forms.
-            </p>
           </div>
         </div>
       </div>
