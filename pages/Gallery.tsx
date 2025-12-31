@@ -27,7 +27,12 @@ const Gallery: React.FC = () => {
         "/PICTURES/Innoverse/DSC_0466.JPG",
         "/PICTURES/Innoverse/DSC_0489.JPG",
         "/PICTURES/Innoverse/DSC_0567.JPG",
-        "/PICTURES/Innoverse/DSC_0569.JPG"
+        "/PICTURES/Innoverse/DSC_0569.JPG",
+        "/PICTURES/Innoverse/DSC_0468.JPG",
+        "/PICTURES/Innoverse/DSC_0472.JPG",
+        "/PICTURES/Innoverse/DSC_0477.JPG",
+        "/PICTURES/Innoverse/DSC_0495.JPG",
+        "/PICTURES/Innoverse/DSC_0138.JPG"
       ]
     },
     {
