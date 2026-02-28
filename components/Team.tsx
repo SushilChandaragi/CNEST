@@ -23,7 +23,7 @@ const Team: React.FC = () => {
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700 mx-auto md:mx-0 shadow-md">
                   <img 
-                    src="/arun-sadanand-tigadi1.jpg" 
+                    src="/arunsir.png" 
                     alt="Dr. Arun Sadanand Tigadi"
                     className="w-full h-full object-cover"
                   />
@@ -36,7 +36,7 @@ const Team: React.FC = () => {
                   Dr. Arun Sadanand Tigadi
                 </h3>
                 <p className="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-4">
-                  Coordinator CTIE & AICTE IDEA LAB | Associate Professor, ECE
+                  PI CNEST TBI 2.0 | Associate Professor, Dept of E and C
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
                   With 15+ years of experience and a Ph.D. in Electrical & Electronics Engineering, 
@@ -72,9 +72,6 @@ const Team: React.FC = () => {
         </div>
 
         {/* More Team Members Placeholder */}
-        <div className="text-center">
-          <p className="text-gray-500 dark:text-gray-400 text-lg">More team members coming soon...</p>
-        </div>
 
         {/* Partnership CTA */}
         <div className="mt-12 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-10 text-center border border-blue-100 dark:border-gray-600">

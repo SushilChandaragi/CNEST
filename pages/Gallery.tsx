@@ -46,13 +46,25 @@ const Gallery: React.FC = () => {
       ]
     },
     {
-      title: "CTIE Inauguration",
-      description: "A historic moment marking the official launch of the Centre for Technology Innovation and Entrepreneurship (CTIE), celebrating the beginning of a new era in innovation and entrepreneurship at KLE Technological University.",
+      title: "CNEST Inauguration",
+      description: "A historic moment marking the official launch of CNEST — the Centre for Next Gen Entrepreneurship in Science & Technology — celebrating the beginning of a new era in innovation and entrepreneurship at KLE Technological University.",
       images: [
         "/PICTURES/CTIE INNAUGRATION/CTIE news paper.jpeg",
         "/PICTURES/CTIE INNAUGRATION/DSC_6361.JPG",
         "/PICTURES/CTIE INNAUGRATION/DSC_6414.JPG",
         "/PICTURES/CTIE INNAUGRATION/DSC_6458.JPG"
+      ]
+    },
+    {
+      title: "Infrastructure",
+      description: "A glimpse into the world-class infrastructure at CNEST — state-of-the-art labs, collaborative workspaces, and cutting-edge facilities designed to empower the next generation of innovators and entrepreneurs at KLE Technological University.",
+      images: [
+        "/PICTURES/DSCN4554.JPG",
+        "/PICTURES/Picsart_26-01-29_12-31-35-741.jpg.jpeg",
+        "/PICTURES/Picsart_26-01-29_12-50-59-334.jpg.jpeg",
+        "/PICTURES/Picsart_26-01-29_15-45-35-194.jpg.jpeg",
+        "/PICTURES/Picsart_26-01-29_15-53-50-815.jpg.jpeg",
+        "/PICTURES/WhatsApp Image 2026-02-24 at 2.45.07 PM.jpeg"
       ]
     }
   ];

@@ -10,7 +10,7 @@ const About: React.FC = () => {
             Who We Are
           </h2>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 mx-auto">
-            Situated at the heart of Belgaum in Udyambagh, CNEST is a premier incubation center under CTIE, dedicated to fostering innovation.
+            A Government of Karnataka–supported Technology Business Incubator at KLE Technological University, Dr. M. S. Sheshgiri Campus, Belagavi — transforming ideas into enterprises.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Our Mission</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              To identify, nurture, and scale innovative startups in science and technology by providing comprehensive support systems, funding, and mentorship.
+              To foster technology-based entrepreneurship by supporting innovators through structured mentoring, infrastructure, and ecosystem access — bridging academia, industry, and government to strengthen the "Beyond Bengaluru" startup ecosystem.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Our Vision</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              To become the leading hub for entrepreneurial excellence in North Karnataka, driving economic growth through technological advancement.
+              To build a globally competitive, self-sustaining startup ecosystem in North Karnataka — where regional talent drives deep-tech innovation at a global scale.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Our Goal</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              To incubate and graduate 50+ successful startups in the next 5 years, creating job opportunities and solving real-world problems.
+              To incubate 50+ startups by 2030, creating scalable enterprises across deep-tech domains — from AI and MedTech to AgriTech and embedded systems.
             </p>
           </div>
         </div>
@@ -52,19 +52,24 @@ const About: React.FC = () => {
         <div className="mt-16 bg-blue-900 rounded-2xl overflow-hidden shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-10 flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">Empowering Startups at KLE Tech</h3>
-                    <p className="text-blue-100 mb-6">
-                        We are just starting out, but our impact is already growing. With 2 companies successfully incubated, CNEST is laying the foundation for a vibrant startup ecosystem in Belagavi.
+                    <h3 className="text-2xl font-bold text-white mb-4">Innovation Shouldn't Migrate. It Should Multiply.</h3>
+                    <p className="text-blue-100 mb-4">
+                        CNEST TBI is supported by the <span className="font-semibold text-white">Dept. of IT and BT, Government of Karnataka (TBI 2.0)</span> and anchored at KLE Technological University. We support startups from ideation to commercialization.
                     </p>
+                    <ul className="text-blue-100 space-y-2 mb-6 text-sm">
+                        <li className="flex items-start gap-2"><span className="text-blue-300 font-bold mt-0.5">•</span>Section 8, professionally governed entity</li>
+                        <li className="flex items-start gap-2"><span className="text-blue-300 font-bold mt-0.5">•</span>5,100 sq. ft. dedicated incubation space</li>
+                        <li className="flex items-start gap-2"><span className="text-blue-300 font-bold mt-0.5">•</span>Strategic tri-state location: Karnataka · Goa · Maharashtra</li>
+                    </ul>
                     <div className="flex items-center space-x-4">
-                        <div className="flex flex-col">
-                            <span className="text-3xl font-bold text-white">2+</span>
-                            <span className="text-blue-200 text-sm">Incubated Startups</span>
-                        </div>
-                        <div className="h-10 w-px bg-blue-700"></div>
                         <div className="flex flex-col">
                             <span className="text-3xl font-bold text-white">Govt</span>
                             <span className="text-blue-200 text-sm">Recognized</span>
+                        </div>
+                        <div className="h-10 w-px bg-blue-700"></div>
+                        <div className="flex flex-col">
+                            <span className="text-3xl font-bold text-white">₹10Cr+</span>
+                            <span className="text-blue-200 text-sm">Government Funding</span>
                         </div>
                     </div>
                 </div>

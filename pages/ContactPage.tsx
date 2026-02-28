@@ -20,7 +20,10 @@ const ContactPage: React.FC = () => {
             </div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Address</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-              
+              KLE Technological University,<br />
+              Dr. M. S. Sheshgiri Campus,<br />
+              Udyambagh, Belagavi – 590008,<br />
+              Karnataka, India
             </p>
           </div>
 
@@ -30,7 +33,7 @@ const ContactPage: React.FC = () => {
             </div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              
+              arun.tigadi@klescet.ac.in
             </p>
           </div>
         </div>

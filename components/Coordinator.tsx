@@ -16,11 +16,11 @@ const Coordinator: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-6 p-6">
             {/* Photo */}
             <div className="flex-shrink-0">
-              <div className="w-32 h-32 rounded-lg overflow-hidden bg-gray-200 mx-auto md:mx-0">
+              <div className="w-28 h-40 rounded-lg overflow-hidden bg-gray-200 mx-auto md:mx-0">
                 <img 
-                  src="/api/placeholder/128/128" 
+                  src="/arun-sadanand-tigadi1.jpg" 
                   alt="Dr. Arun Sadanand Tigadi"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
@@ -31,7 +31,7 @@ const Coordinator: React.FC = () => {
                 Dr. Arun Sadanand Tigadi
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Associate Professor, ECE | Coordinator CTIE & AICTE IDEA LAB
+                PI CNEST TBI 2.0 | Associate Professor, Dept of E and C
               </p>
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 With 15+ years of experience and a Ph.D. in Electrical & Electronics Engineering, 

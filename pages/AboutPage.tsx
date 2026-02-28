@@ -5,37 +5,37 @@ import { Link } from 'react-router-dom';
 const AboutPage: React.FC = () => {
   const timelineEvents = [
     {
-      year: "",
-      title: "",
-      description: "",
+      year: "Foundation",
+      title: "CNEST TBI Established",
+      description: "CNEST TBI formally established at KLE Technological University under the GoK TBI 2.0 initiative, supported by the Dept. of IT and BT, Government of Karnataka.",
       icon: Rocket,
       color: "blue"
     },
     {
-      year: "",
-      title: "",
-      description: "",
+      year: "Infrastructure",
+      title: "5,100 Sq. Ft. Incubation Space",
+      description: "State-of-the-art 5,100 sq. ft. dedicated incubation facility commissioned with cubicles, collaboration areas, meeting rooms, and prototyping lab access at KLE Tech.",
       icon: Building2,
       color: "indigo"
     },
     {
-      year: "",
-      title: "",
-      description: "",
+      year: "Inaugural Cohort",
+      title: "First Startups Incubated",
+      description: "CNEST TBI welcomed its first cohort of innovators — student teams, faculty ventures, and early-stage entrepreneurs — beginning the journey from idea to enterprise.",
       icon: Users,
       color: "purple"
     },
     {
-      year: "",
-      title: "",
-      description: "",
+      year: "Goal: 2027",
+      title: "20+ Active Startups",
+      description: "Target to scale to 20+ active incubatees across deep-tech thrust areas — AI/ML, MedTech, AgriTech, Smart Manufacturing, and Electronics & VLSI.",
       icon: Award,
       color: "pink"
     },
     {
-      year: "",
-      title: "",
-      description: "",
+      year: "Vision: 2030",
+      title: "50+ Startups & Tri-State Hub",
+      description: "Become the leading deep-tech incubator for the Karnataka–Goa–Maharashtra corridor, graduating 50+ startups and establishing Belagavi as a 'Beyond Bengaluru' innovation hub.",
       icon: Rocket,
       color: "orange"
     }
@@ -50,7 +50,7 @@ const AboutPage: React.FC = () => {
             About CNEST
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Centre for Next Gen Entrepreneurship in Science & Technology - Transforming Ideas into Impact
+            Centre for Next-Gen Entrepreneurs in Science &amp; Technology — A Government of Karnataka–Supported Technology Business Incubator at KLE Technological University, Belagavi.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const AboutPage: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              To identify, nurture, and scale innovative startups in science and technology by providing comprehensive support systems, funding, and mentorship that enables entrepreneurs to transform groundbreaking ideas into successful enterprises.
+              To foster technology-based entrepreneurship by supporting innovators through structured mentoring, infrastructure, and ecosystem access — enabling commercialization of research and bridging academia, industry, and government to strengthen North Karnataka's innovation ecosystem.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Vision</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              To become the leading hub for entrepreneurial excellence in North Karnataka, driving economic growth through technological advancement and creating a sustainable ecosystem where innovation thrives and transforms communities.
+              To build a globally competitive, self-sustaining startup ecosystem in North Karnataka — empowering innovators in science, engineering, and deep technology so that regional talent drives innovation at a global scale.
             </p>
           </div>
 
@@ -82,7 +82,7 @@ const AboutPage: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Goal</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              To incubate and graduate 50+ successful startups in the next 5 years, creating meaningful job opportunities, solving real-world problems, and establishing Belagavi as a nationally recognized innovation destination.
+              To incubate 50+ high-impact startups by 2030 across deep-tech domains — creating meaningful employment, solving real-world problems, and establishing Belagavi as a nationally recognised innovation destination.
             </p>
           </div>
         </div>
@@ -91,10 +91,10 @@ const AboutPage: React.FC = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
-              Our Journey
+              Milestones &amp; Future Goals
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              From inception to impact - witness the evolution of CNEST
+              From our founding to our 2030 vision — key steps in building North Karnataka’s deep-tech startup hub
             </p>
           </div>
 
@@ -155,27 +155,32 @@ const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-10 lg:p-16 flex flex-col justify-center">
               <h3 className="text-3xl font-bold text-white mb-4">
-                Empowering Innovation at KLE Tech
+                Innovation Shouldn’t Migrate. It Should Multiply.
               </h3>
-              <p className="text-blue-100 dark:text-gray-300 mb-8 text-lg leading-relaxed">
-                Situated at the prestigious KLE Technological University in Udyambagh, Belagavi, CNEST is building a thriving startup ecosystem. With government backing and world-class infrastructure, we're creating the foundation for entrepreneurial excellence in North Karnataka.
+              <p className="text-blue-100 dark:text-gray-300 mb-4 text-lg leading-relaxed">
+                Anchored at KLE Technological University and backed by the <span className="font-semibold text-white">Dept. of IT &amp; BT, GoK (TBI 2.0)</span>, CNEST TBI bridges academia, industry, and government to power the "Beyond Bengaluru" startup ecosystem.
               </p>
+              <ul className="text-blue-100 dark:text-gray-300 space-y-2 mb-6 text-sm">
+                <li className="flex items-start gap-2"><span className="text-blue-300 font-bold mt-0.5">•</span>Section 8 company with transparent, professional governance</li>
+                <li className="flex items-start gap-2"><span className="text-blue-300 font-bold mt-0.5">•</span>Strong academic &amp; research backbone at KLE Tech</li>
+                <li className="flex items-start gap-2"><span className="text-blue-300 font-bold mt-0.5">•</span>Strategic location at the Karnataka · Goa · Maharashtra tri-state junction</li>
+              </ul>
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
                   <span className="block text-4xl font-bold text-white mb-1">₹10Cr+</span>
                   <span className="text-blue-200 text-sm">Government Funding</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                  <span className="block text-4xl font-bold text-white mb-1">2+</span>
-                  <span className="text-blue-200 text-sm">Incubated Startups</span>
+                  <span className="block text-3xl font-bold text-white mb-1">5,100</span>
+                  <span className="text-blue-200 text-sm">Sq. Ft. Incubation Space</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
                   <span className="block text-4xl font-bold text-white mb-1">Govt</span>
-                  <span className="text-blue-200 text-sm">Recognized</span>
+                  <span className="text-blue-200 text-sm">Recognized (GoK TBI 2.0)</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
                   <span className="block text-4xl font-bold text-white mb-1">50+</span>
-                  <span className="text-blue-200 text-sm">Target by 2030</span>
+                  <span className="text-blue-200 text-sm">Target Startups by 2030</span>
                 </div>
               </div>
             </div>

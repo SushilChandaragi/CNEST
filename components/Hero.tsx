@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             Centre for Next Gen <span className="text-blue-400 dark:text-blue-300">Entrepreneurship</span> in Science & Technology
           </h1>
           <p className="mt-4 text-xl text-gray-300 dark:text-gray-200 mb-8 leading-relaxed">
-            Incubating the future of Belagavi. We provide the ecosystem, funding, and expertise to turn your scientific innovations into scalable enterprises.
+            A Government of Karnataka–supported Technology Business Incubator at KLE Technological University, Belagavi. We provide the ecosystem, funding, and expertise to help deep-tech startups grow right where they are born.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
             <Link 
