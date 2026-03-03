@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
             </div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              arun.tigadi@klescet.ac.in
+              cnest.mss@kletech.ac.in
             </p>
           </div>
         </div>

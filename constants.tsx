@@ -58,4 +58,4 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 // Contact link for application form
-export const CONTACT_LINK = "mailto:arun.tigadi@klescet.ac.in";
+export const CONTACT_LINK = "mailto:cnest.mss@kletech.ac.in";
