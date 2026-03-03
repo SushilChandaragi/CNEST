@@ -44,8 +44,7 @@ const Coordinator: React.FC = () => {
                   className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700"
                 >
                   <Mail className="w-4 h-4" />
-                  aruntigadi.mss@kletech.ac.in
-                </a>
+                  cnest.mss@kletech.ac.in                </a>
                 <a 
                   href="tel:+919886719354"
                   className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700"
