@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, ExternalLink } from 'lucide-react';
+import { MapPin, Mail, Phone, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const CallToAction: React.FC = () => {
@@ -32,16 +32,32 @@ const CallToAction: React.FC = () => {
             </div>
 
             {/* Email Us */}
-            <div>
+            <div className="mb-6">
               <div className="flex items-start gap-3">
                 <Mail className="w-6 h-6 text-blue-300 dark:text-blue-400 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">Email Us</h3>
                   <a 
-                    href="mailto:contact@cnest.kle.edu" 
+                    href="mailto:cnest.mss@kletech.ac.in" 
                     className="text-blue-100 dark:text-gray-300 hover:text-white transition-colors"
                   >
-                    contact@mail.com
+                    cnest.mss@kletech.ac.in
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Call Us */}
+            <div>
+              <div className="flex items-start gap-3">
+                <Phone className="w-6 h-6 text-blue-300 dark:text-blue-400 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Call Us</h3>
+                  <a 
+                    href="tel:08312491836" 
+                    className="text-blue-100 dark:text-gray-300 hover:text-white transition-colors"
+                  >
+                    0831 - 2491836
                   </a>
                 </div>
               </div>

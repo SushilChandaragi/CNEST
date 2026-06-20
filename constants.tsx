@@ -1,18 +1,12 @@
 import React from 'react';
-import { NavItem, ServiceItem, TeamMember } from './types';
-import { 
-  Rocket, 
-  Banknote, 
-  Users, 
-  Megaphone, 
-  PenTool, 
-  Cpu, 
-  Target,
+import { NavItem, ServiceItem } from './types';
+import {
+  Rocket,
+  Banknote,
+  Users,
   Lightbulb,
-  FlaskConical,
   Building2,
   FileText,
-  MapPin
 } from 'lucide-react';
 
 export const NAV_ITEMS: NavItem[] = [
@@ -56,6 +50,3 @@ export const SERVICES: ServiceItem[] = [
     icon: <Users className="w-8 h-8 text-blue-600" />,
   },
 ];
-
-// Contact link for application form
-export const CONTACT_LINK = "mailto:cnest.mss@kletech.ac.in";

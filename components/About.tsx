@@ -9,9 +9,6 @@ const About: React.FC = () => {
           <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
             Who We Are
           </h2>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 mx-auto">
-            A Government of Karnataka–supported Technology Business Incubator at KLE Technological University, Dr. M. S. Sheshgiri Campus, Belagavi — transforming ideas into enterprises.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

@@ -49,9 +49,6 @@ const AboutPage: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
             About CNEST
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Centre for Next-Gen Entrepreneurs in Science &amp; Technology — A Government of Karnataka–Supported Technology Business Incubator at KLE Technological University, Belagavi.
-          </p>
         </div>
 
         {/* Mission, Vision, Goal Cards */}

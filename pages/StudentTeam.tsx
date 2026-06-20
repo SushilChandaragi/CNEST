@@ -30,7 +30,7 @@ const teams = [
     labelColor: 'text-violet-600 dark:text-violet-400',
     countBg: 'bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300',
     members: [
-      'Adarsh Kapse', 'Karan Jadhav', 'Darshan Patil', 'Srushti Honnagi',
+      'Karan Jadhav', 'Darshan Patil', 'Srushti Honnagi',
       'Punyashree Mattad', 'Manyata Tegnale', 'Iqra Sanadi', 'Sanjana Mudalagi',
       'Gopalkrishna Tarale',
     ],
@@ -42,7 +42,7 @@ const teams = [
     labelColor: 'text-emerald-600 dark:text-emerald-400',
     countBg: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300',
     members: [
-      'Rashmi Halkarni', 'Sneha Kolvekar', 'Aadya Kulkarni', 'Vipul More',
+      'Aadya Kulkarni', 'Vipul More',
       'Aymaan Sait', 'Aditi Kulkarni', 'Samiksha Yadav', 'Spoorthi C', 'Sarvesh Naik',
     ],
   },
@@ -53,7 +53,7 @@ const teams = [
     labelColor: 'text-rose-600 dark:text-rose-400',
     countBg: 'bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300',
     members: [
-      'Akash Janawad', 'Vivek Mavinkatti', 'Vikas Koppad', 'Vikas Angadi',
+       'Vivek Mavinkatti', 'Vikas Koppad', 'Vikas Angadi',
       'Basavaraj Patil', 'Aditya Abdulpur', 'Chetan Walikar', 'Kshitij Jagajampi',
       'Niranjan Pawar', 'Vishal Malagi', 'Srusti Singadi', 'Shashank Iranatti',
     ],
@@ -65,7 +65,7 @@ const teams = [
     labelColor: 'text-indigo-600 dark:text-indigo-400',
     countBg: 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300',
     members: [
-      'Arya Mane', 'Ramkrishna Huddar', 'Pallavi Bhat', 'Keerti Mahantshetti',
+     'Ramkrishna Huddar', 'Pallavi Bhat', 'Keerti Mahantshetti',
       'Shamsher Patil', 'Rikhil Gopi', 'Salil', 'Darshan Kittur',
       'Spoorti Jarali', 'Ishan Bagewadi', 'Varsha Dandgall', 'Ranjita Shet', 'Siri Shet',
     ],
@@ -79,12 +79,12 @@ const StudentTeam: React.FC = () => {
 
         {/* Page Header */}
         <div className="mb-14">
-          <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">CNEST TBI · 2025</p>
+          <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">CNEST TBI 2025-26</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-3">
             Student Team
           </h1>
           <p className="text-gray-500 dark:text-gray-400 text-lg max-w-xl">
-            The student community behind CNEST — building, designing, communicating, and growing together.
+            The student community behind CNEST.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ const StudentTeam: React.FC = () => {
 
         {/* Footer note */}
         <p className="text-center text-xs text-gray-400 dark:text-gray-600 mt-16">
-          CNEST Student Body · Batch 2025 · KLE Technological University, Belagavi
+          CNEST Student Body · Batch 2025 - 26 · KLE Technological University, Belagavi
         </p>
 
       </div>

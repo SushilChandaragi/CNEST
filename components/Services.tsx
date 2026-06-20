@@ -1,13 +1,11 @@
 import React from 'react';
 import { SERVICES } from '../constants';
-import { Heart, Leaf, Brain, Settings, Cpu } from 'lucide-react';
+import { Heart, Leaf, Brain } from 'lucide-react';
 
 const thrustAreas = [
   { icon: Heart,    label: 'Smart Healthcare & MedTech (IoT)', color: 'text-rose-500' },
   { icon: Leaf,     label: 'Sustainable AgriTech & Smart Farming', color: 'text-green-500' },
   { icon: Brain,    label: 'Artificial Intelligence & ML', color: 'text-blue-500' },
-  { icon: Settings, label: 'Smart Manufacturing, Aerospace & Mechatronics', color: 'text-orange-500' },
-  { icon: Cpu,      label: 'Electronics, Embedded Systems & VLSI', color: 'text-purple-500' },
 ];
 
 const Services: React.FC = () => {
@@ -19,9 +17,6 @@ const Services: React.FC = () => {
           <h2 className="mt-2 text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
             Comprehensive Incubation Support
           </h2>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 mx-auto">
-            End-to-end support across the full startup lifecycle — from idea validation to scale-up.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -48,7 +43,7 @@ const Services: React.FC = () => {
             <h3 className="mt-2 text-2xl font-extrabold text-gray-900 dark:text-white">Thrust Areas</h3>
             <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm max-w-xl mx-auto">CNEST TBI focuses on deep-tech startups across these key domains.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {thrustAreas.map((area, i) => {
               const Icon = area.icon;
               return (

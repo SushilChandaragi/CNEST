@@ -17,9 +17,6 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
         <div className="sm:max-w-2xl">
-          <span className="inline-block py-1 px-3 rounded-full bg-blue-500/20 dark:bg-blue-400/20 text-blue-200 dark:text-blue-300 border border-blue-400/30 dark:border-blue-300/30 text-sm font-semibold mb-6 backdrop-blur-sm">
-            KLE Technological University
-          </span>
           <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl mb-6">
             Centre for Next Gen <span className="text-blue-400 dark:text-blue-300">Entrepreneurship</span> in Science & Technology
           </h1>
