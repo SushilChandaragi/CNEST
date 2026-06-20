@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
 interface GallerySection {
   title: string;
@@ -8,6 +9,10 @@ interface GallerySection {
 }
 
 const Gallery: React.FC = () => {
+  useDocumentMetadata(
+    "Innovation Gallery & Event Highlights | CNEST TBI",
+    "Explore CNEST's journey through our innovation gallery, including showcases of incubated startups, ideation workshops, and the official CNEST inauguration."
+  );
   const [selectedSection, setSelectedSection] = useState<number>(0);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
@@ -162,8 +167,9 @@ const Gallery: React.FC = () => {
                 >
                   <img
                     src={image}
-                    alt={`Thumbnail ${index + 1}`}
+                    alt={`${currentSection.title} Thumbnail ${index + 1}`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </button>
               ))}
@@ -185,6 +191,7 @@ const Gallery: React.FC = () => {
                   src={image}
                   alt={`${currentSection.title} - Image ${index + 1}`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             ))}

@@ -75,6 +75,7 @@ const About: React.FC = () => {
                         src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop&q=80" 
                         alt="KLE Tech Campus - Innovation Hub" 
                         className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
+                        loading="lazy"
                     />
                     <div className="absolute inset-0 bg-blue-900/40"></div>
                 </div>

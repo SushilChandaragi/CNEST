@@ -26,6 +26,7 @@ const Team: React.FC = () => {
                     src="/arunsir.png" 
                     alt="Dr. Arun Sadanand Tigadi"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>

@@ -58,7 +58,9 @@ const Header: React.FC = () => {
             <DarkModeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-label="Toggle navigation menu"
+              aria-expanded={isOpen}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

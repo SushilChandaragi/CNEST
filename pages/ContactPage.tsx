@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { MapPin, Mail, Building2, User, Phone, MessageSquare, Send, Linkedin, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { CONTACT_FORM_ENDPOINT } from '../constants';
+import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
 const ContactPage: React.FC = () => {
+  useDocumentMetadata(
+    "Contact Us & Location Details | CNEST Incubation Center",
+    "Get in touch with CNEST TBI. Find our email, contact number, official socials, or visit our office at KLE Technological University, Belagavi campus."
+  );
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -281,7 +286,7 @@ const ContactPage: React.FC = () => {
             </div>
 
             {/* Social Connect Group */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-750 rounded-3xl p-6 border border-blue-100 dark:border-gray-700 shadow-xl transition-colors duration-300">
+            <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-xl border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Connect With Us</h3>
               <p className="text-gray-600 dark:text-gray-400 text-xs mb-6 leading-relaxed">
                 Join our startup ecosystem and follow our official channels for updates.

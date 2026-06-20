@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Monitor, Pen, Camera, Users, Code } from 'lucide-react';
+import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
 const leads = [
   { name: 'Rashmi Halkarni',  role: 'Overall Lead',   icon: Star,    iconColor: 'text-amber-500',   iconBg: 'bg-amber-50 dark:bg-amber-900/20',    ring: 'ring-amber-300 dark:ring-amber-700' },
@@ -73,6 +74,10 @@ const teams = [
 ];
 
 const StudentTeam: React.FC = () => {
+  useDocumentMetadata(
+    "Student Team & Community Leads | CNEST TBI",
+    "Meet the student community, technical leads, and coordinators driving the next generation of entrepreneurship and innovation at CNEST TBI."
+  );
   return (
     <div className="pt-28 pb-20 bg-white dark:bg-gray-900 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,7 +1,12 @@
 import React from 'react';
 import { Bell } from 'lucide-react';
+import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
 const Careers: React.FC = () => {
+  useDocumentMetadata(
+    "Careers & Opportunities | Join CNEST TBI",
+    "Explore career opportunities, research projects, and student roles at CNEST Technological Incubator in Belagavi. Join us to support deep-tech startups."
+  );
   return (
     <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

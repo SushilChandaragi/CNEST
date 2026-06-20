@@ -1,8 +1,13 @@
 import React from 'react';
 import { Target, Eye, Compass, Calendar, Rocket, Award, Users, Building2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
 const AboutPage: React.FC = () => {
+  useDocumentMetadata(
+    "About Us | CNEST Startup Incubation Hub Belagavi",
+    "Learn about CNEST's mission, vision, and milestones. Anchor-supported by the Government of Karnataka TBI 2.0 initiative to build a startup ecosystem in North Karnataka."
+  );
   const timelineEvents = [
     {
       year: "Foundation",
@@ -186,6 +191,7 @@ const AboutPage: React.FC = () => {
                 src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop" 
                 alt="KLE Tech Campus" 
                 className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 to-transparent"></div>
             </div>
