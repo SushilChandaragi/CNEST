@@ -75,7 +75,7 @@ const teams = [
 const StudentTeam: React.FC = () => {
   return (
     <div className="pt-28 pb-20 bg-white dark:bg-gray-900 min-h-screen">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Page Header */}
         <div className="mb-14">
@@ -93,7 +93,7 @@ const StudentTeam: React.FC = () => {
           <h2 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
             Team Leads
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
             {leads.map((lead) => {
               const Icon = lead.icon;
               return (
@@ -136,7 +136,7 @@ const StudentTeam: React.FC = () => {
                 </div>
 
                 {/* Members grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                   {team.members.map((name, i) => (
                     <div
                       key={i}

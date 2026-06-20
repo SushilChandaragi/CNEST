@@ -50,3 +50,6 @@ export const SERVICES: ServiceItem[] = [
     icon: <Users className="w-8 h-8 text-blue-600" />,
   },
 ];
+
+// Paste the Google Apps Script Web App URL after deployment
+export const CONTACT_FORM_ENDPOINT = "";
