@@ -52,4 +52,4 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 // Paste the Google Apps Script Web App URL after deployment
-export const CONTACT_FORM_ENDPOINT = "";
+export const CONTACT_FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxA-z4x3MrvQS6BDDshhooCx0NYpOpzntrseaYLXsPF6zLl0nIRvI8nsdlO7eCtNx44mA/exec";

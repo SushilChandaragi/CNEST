@@ -35,25 +35,19 @@ const ContactPage: React.FC = () => {
     }
 
     try {
-      const response = await fetch(CONTACT_FORM_ENDPOINT, {
+      // Use no-cors mode with text/plain content type to avoid preflight CORS blocks
+      await fetch(CONTACT_FORM_ENDPOINT, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain',
         },
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to submit. Please try again later.');
-      }
-
-      const result = await response.json();
-      if (result.status === 'success') {
-        setStatus('success');
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      } else {
-        throw new Error(result.message || 'Something went wrong on the server.');
-      }
+      // With no-cors, any response that does not throw a network exception is counted as success
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     } catch (err: any) {
       console.error(err);
       setStatus('error');
@@ -234,7 +228,7 @@ const ContactPage: React.FC = () => {
             
             {/* Contact Bubbles Group */}
             <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-xl border border-gray-100 dark:border-gray-700 transition-colors duration-300">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-6">Contact Channels</h3>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-6">Contact us</h3>
               
               <div className="space-y-6">
                 {/* Address */}
