@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               Centre for Next Gen Entrepreneurship in Science & Technology
             </p>
             <div className="mt-4 text-gray-500 dark:text-gray-500 text-xs">
-              Under CTIE, KLE Technological University
+               KLE Technological University
             </div>
           </div>
           
