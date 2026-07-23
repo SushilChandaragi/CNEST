@@ -4,7 +4,7 @@ import About from '../components/About';
 import WhoWeServe from '../components/WhoWeServe';
 import Services from '../components/Services';
 import Achievements from '../components/Achievements';
-import Team from '../components/Team';
+
 import CallToAction from '../components/CallToAction';
 import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       <Achievements />
       <Services />
       <CallToAction />
-      <Team />
+
     </>
   );
 };
