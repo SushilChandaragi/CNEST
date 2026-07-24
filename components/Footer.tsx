@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               Centre for Next Gen Entrepreneurship in Science & Technology
             </p>
             <div className="mt-4 text-gray-500 dark:text-gray-500 text-xs">
-              Under CTIE, KLE Technological University
+              KLE Technological University
             </div>
           </div>
           
@@ -51,9 +51,7 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-400 dark:text-gray-400 leading-relaxed mb-3">
               Supported by the Government of Karnataka with ₹10 Crores funding
             </p>
-            <div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-lg text-center font-semibold text-sm">
-              Karnataka Innovation
-            </div>
+
           </div>
         </div>
         
