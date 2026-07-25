@@ -35,7 +35,6 @@ const committees: Record<string, { description: string; people: Person[] }> = {
       { name: 'Dr. Praveen A. Ghorpade', role: 'Committee Member' },
       { name: 'Suhasini S', role: 'Committee Member' },
       { name: 'Rajendrakumar Harkuni', role: 'Committee Member' },
-      { name: 'To Be Assigned', role: 'Government of Karnataka Representative', detail: 'Designated Government of Karnataka role.' },
     ],
   },
   governing: {
@@ -43,7 +42,6 @@ const committees: Record<string, { description: string; people: Person[] }> = {
     people: [
       { name: 'Dr. S. F. Patil', role: 'Governing Body Member' },
       { name: 'Dr. Sachin Sabnis', role: 'Governing Body Member' },
-      { name: 'To Be Assigned', role: 'KLE Technological University Representative', detail: 'Designated KLE Technological University role.' },
       { name: 'Dr. Arun Sadanand Tigadi', role: 'CEO, TBI' },
     ],
   },
@@ -56,16 +54,19 @@ const committees: Record<string, { description: string; people: Person[] }> = {
       { name: 'Vinayak Hiremath', role: 'Committee Member' },
       { name: 'Ram Subramanian', role: 'Committee Member' },
       { name: 'Dr. Vinayak Hosamani', role: 'Committee Member' },
-      { name: 'To Be Assigned', role: 'Government of Karnataka Representative', detail: 'Designated Government of Karnataka role.' },
       { name: 'Dr. Arun Sadanand Tigadi', role: 'CEO, TBI' },
     ],
   },
   recruitment: {
     description: 'The recruitment and selection committee oversees the selection process for CNEST positions and programmes.',
     people: [
-      { name: 'To Be Assigned', role: 'Chairperson' },
-      { name: 'To Be Assigned', role: 'Member Secretary' },
-      { name: 'To Be Assigned', role: 'Committee Member' },
+      { name: 'Dr. S. F. Patil', role: 'Member' },
+      { name: 'Dr. B.B. Kotturshettar', role: 'Member' },
+      { name: 'Dr. Manisha Tapale', role: 'Member' },
+      { name: 'Dr. Vinayak Hosamani ', role: 'Member' },
+      { name: 'Mr. Rakshit Kalyani', role: 'Member' },
+      { name: 'Mr. Shankar', role: 'Member' },
+
     ],
   },
 };
