@@ -10,30 +10,30 @@ const Hero: React.FC = () => {
         <img 
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop&q=80" 
           alt="Innovation and Entrepreneurship" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-65"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#171614]/85 via-[#1E2B24]/70 to-[#121110]/55"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
         <div className="sm:max-w-2xl">
-          <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl mb-6">
-            Centre for Next Gen <span className="text-blue-400 dark:text-blue-300">Entrepreneurship</span> in Science & Technology
+          <h1 className="text-4xl tracking-tight font-black text-[#F5F2ED] sm:text-5xl md:text-6xl mb-6 leading-tight">
+            Centre for Next Gen <span className="text-[#88B098]">Entrepreneurship</span> in Science & Technology
           </h1>
-          <p className="mt-4 text-xl text-gray-300 dark:text-gray-200 mb-8 leading-relaxed">
+          <p className="mt-4 text-lg text-stone-300 mb-8 leading-relaxed font-normal">
             A Government of Karnataka–supported Technology Business Incubator at KLE Technological University, Belagavi. We provide the ecosystem, funding, and expertise to help deep-tech startups grow right where they are born.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
             <Link 
               to="/contact" 
-              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 dark:bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-sm font-bold rounded-xl text-[#171614] bg-[#88B098] hover:bg-[#A8C3B3] transition-all duration-300 shadow-md hover:shadow-emerald-900/40 transform hover:-translate-y-0.5"
             >
               Join CNEST
               <ArrowRight className="ml-2 -mr-1 w-5 h-5" />
             </Link>
             <Link 
               to="/about" 
-              className="inline-flex items-center justify-center px-8 py-3 border border-gray-400 dark:border-gray-300 text-base font-medium rounded-md text-gray-200 dark:text-gray-100 hover:text-white hover:border-white dark:hover:border-white transition-all duration-300 backdrop-blur-sm bg-white/5 dark:bg-white/10 transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-stone-600 text-sm font-bold rounded-xl text-stone-200 hover:text-white hover:border-stone-300 transition-all duration-300 backdrop-blur-sm bg-white/5 transform hover:-translate-y-0.5"
             >
               Learn More
             </Link>

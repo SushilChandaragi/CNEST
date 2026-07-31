@@ -26,7 +26,7 @@ const App: React.FC = () => {
   return (
     <DarkModeProvider>
       <Router>
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div className="min-h-screen bg-[#F7F5F0] dark:bg-[#171614] text-[#2C2926] dark:text-[#F5F2ED] transition-colors duration-300 font-sans">
           <Header />
           <ScrollToTop />
           <main className="transition-opacity duration-300 ease-in-out">

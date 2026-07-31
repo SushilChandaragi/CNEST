@@ -59,32 +59,32 @@ const WhoWeServe: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section className="py-20 bg-[#F7F5F0] dark:bg-[#171614] transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-4 tracking-tight">
             Who Can Apply
           </h2>
-          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base text-[#615C56] dark:text-[#A39E96] max-w-2xl mx-auto font-normal">
             CNEST TBI welcomes innovators and entrepreneurs with technology-driven ideas across diverse stages and backgrounds.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {applicants.map((item, i) => {
             const Icon = item.icon;
             return (
               <div
                 key={i}
-                className="group relative bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden"
+                className="group relative bg-white dark:bg-[#24221F] rounded-2xl border border-[#E3DFD7] dark:border-[#33302B] p-6 shadow-[0_4px_20px_rgba(44,41,38,0.03)] hover:shadow-[0_12px_30px_rgba(44,41,38,0.07)] hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col justify-between"
               >
-                {/* Subtle colour dot accent top-right */}
-                <div className={`absolute top-4 right-4 w-2 h-2 rounded-full ${iconMap[item.color]} opacity-60`} aria-hidden="true" />
-                <div className={`inline-flex items-center justify-center w-11 h-11 ${iconMap[item.color]} rounded-xl mb-4`}>
-                  <Icon className="w-5 h-5 text-white" />
+                <div>
+                  <div className="inline-flex items-center justify-center w-11 h-11 bg-[#2C4035] dark:bg-[#88B098] text-[#F7F5F0] dark:text-[#171614] rounded-xl mb-4 shadow-sm">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-base font-black text-[#2C2926] dark:text-[#F5F2ED] mb-2">{item.title}</h3>
+                  <p className="text-sm text-[#615C56] dark:text-[#A39E96] leading-relaxed">{item.desc}</p>
                 </div>
-                <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{item.desc}</p>
               </div>
             );
           })}

@@ -23,32 +23,32 @@ export const SERVICES: ServiceItem[] = [
   {
     title: 'Incubation Support',
     description: 'End-to-end support from idea validation and product roadmap to MVP development, go-to-market strategy, and scale-up.',
-    icon: <Rocket className="w-8 h-8 text-blue-600" />,
+    icon: <Rocket className="w-8 h-8" />,
   },
   {
     title: 'Mentorship & Expertise',
     description: 'Access to domain experts, industry mentors, faculty researchers, and CXO-level founders for strategic and technical guidance.',
-    icon: <Lightbulb className="w-8 h-8 text-blue-600" />,
+    icon: <Lightbulb className="w-8 h-8" />,
   },
   {
     title: 'Infrastructure',
     description: '5,100 sq. ft. dedicated space with cubicles, collaboration zones, meeting rooms, auditoriums, and prototyping lab access.',
-    icon: <Building2 className="w-8 h-8 text-blue-600" />,
+    icon: <Building2 className="w-8 h-8" />,
   },
   {
     title: 'Funding Facilitation',
     description: 'Access to GoK grants, NAIN, SISF, BIRAC schemes, angel networks, VC connect, and investor demo days.',
-    icon: <Banknote className="w-8 h-8 text-blue-600" />,
+    icon: <Banknote className="w-8 h-8" />,
   },
   {
     title: 'IP & Legal Support',
     description: 'Patent filing guidance, technology transfer support, company incorporation, contracts, and regulatory compliance assistance.',
-    icon: <FileText className="w-8 h-8 text-blue-600" />,
+    icon: <FileText className="w-8 h-8" />,
   },
   {
     title: 'Ecosystem & Network',
     description: 'Industry collaborations across MedTech, AgriTech & foundry sectors, strong alumni network, and national/international exposure opportunities.',
-    icon: <Users className="w-8 h-8 text-blue-600" />,
+    icon: <Users className="w-8 h-8" />,
   },
 ];
 

@@ -4,25 +4,25 @@ import { Link } from 'react-router-dom';
 
 const CallToAction: React.FC = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section className="py-20 bg-gradient-to-br from-[#2C4035] via-[#1E2B24] to-[#121110] text-[#F7F5F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Ready to Innovate */}
           <div className="text-white">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
               Ready to Innovate?
             </h2>
-            <p className="text-lg text-blue-100 dark:text-gray-300 mb-8 leading-relaxed">
+            <p className="text-base text-stone-300 mb-8 leading-relaxed font-normal">
               Whether you have a breakthrough idea or an early-stage startup, CNEST is here to help you scale. Get in touch with us to apply for incubation or seed funding.
             </p>
 
             {/* Visit Us */}
             <div className="mb-6">
               <div className="flex items-start gap-3 mb-2">
-                <MapPin className="w-6 h-6 text-blue-300 dark:text-blue-400 mt-1 flex-shrink-0" />
+                <MapPin className="w-6 h-6 text-[#88B098] mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Visit Us</h3>
-                  <p className="text-blue-100 dark:text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-black mb-1 text-white">Visit Us</h3>
+                  <p className="text-stone-300 text-sm leading-relaxed">
                     CNEST, CTIE Office<br />
                     KLE Technological University<br />
                     Udyambagh, Belgaum, Karnataka
@@ -34,12 +34,12 @@ const CallToAction: React.FC = () => {
             {/* Email Us */}
             <div className="mb-6">
               <div className="flex items-start gap-3">
-                <Mail className="w-6 h-6 text-blue-300 dark:text-blue-400 mt-1 flex-shrink-0" />
+                <Mail className="w-6 h-6 text-[#88B098] mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Email Us</h3>
+                  <h3 className="text-xl font-black mb-1 text-white">Email Us</h3>
                   <a 
                     href="mailto:cnest.mss@kletech.ac.in" 
-                    className="text-blue-100 dark:text-gray-300 hover:text-white transition-colors"
+                    className="text-stone-300 hover:text-white transition-colors text-sm font-mono"
                   >
                     cnest.mss@kletech.ac.in
                   </a>
@@ -50,12 +50,12 @@ const CallToAction: React.FC = () => {
             {/* Call Us */}
             <div>
               <div className="flex items-start gap-3">
-                <Phone className="w-6 h-6 text-blue-300 dark:text-blue-400 mt-1 flex-shrink-0" />
+                <Phone className="w-6 h-6 text-[#88B098] mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Call Us</h3>
+                  <h3 className="text-xl font-black mb-1 text-white">Call Us</h3>
                   <a 
                     href="tel:08312491836" 
-                    className="text-blue-100 dark:text-gray-300 hover:text-white transition-colors"
+                    className="text-stone-300 hover:text-white transition-colors text-sm font-mono"
                   >
                     0831 - 2491836
                   </a>
@@ -65,23 +65,23 @@ const CallToAction: React.FC = () => {
           </div>
 
           {/* Right Side - Apply for Incubation */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 text-center">
+          <div className="bg-[#F7F5F0] dark:bg-[#24221F] rounded-2xl p-10 shadow-2xl border border-[#E3DFD7] dark:border-[#33302B]">
+            <h2 className="text-3xl md:text-4xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-4 text-center tracking-tight">
               Apply for Incubation
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-8 text-lg">
+            <p className="text-[#615C56] dark:text-[#A39E96] text-center mb-8 text-base font-normal">
               Fill out our inquiry form and our team will get back to you with the next steps.
             </p>
 
             <Link
               to="/contact#contact-form"
-              className="flex items-center justify-center gap-3 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="flex items-center justify-center gap-3 w-full bg-[#2C4035] hover:bg-[#1E2B24] dark:bg-[#88B098] dark:hover:bg-[#A8C3B3] text-[#F7F5F0] dark:text-[#171614] font-bold text-base py-4 px-8 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Join CNEST
               <ExternalLink className="w-5 h-5" />
             </Link>
 
-            <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-4">
+            <p className="text-[#615C56] dark:text-[#A39E96] text-xs text-center mt-4 font-mono">
               *By clicking, you will be redirected to the contact form.
             </p>
           </div>

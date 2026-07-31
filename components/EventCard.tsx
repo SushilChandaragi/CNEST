@@ -16,12 +16,12 @@ const EventCard: React.FC<EventCardProps> = ({
   highlights,
 }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden mb-10">
+    <div className="bg-white dark:bg-[#24221F] rounded-2xl border border-[#E3DFD7] dark:border-[#33302B] shadow-[0_4px_20px_rgba(44,41,38,0.03)] hover:shadow-[0_12px_30px_rgba(44,41,38,0.07)] overflow-hidden mb-10 transition-all duration-300">
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
   {images.map((img, index) => (
     <div
       key={index}
-      className="overflow-hidden rounded-3xl shadow-lg"
+      className="overflow-hidden rounded-2xl border border-[#E3DFD7]/60 dark:border-[#33302B]/60 shadow-sm"
     >
       <img
         src={img}
@@ -32,25 +32,27 @@ const EventCard: React.FC<EventCardProps> = ({
   ))}
 </div>
 
-      <div className="p-8">
-        <p className="text-sm font-semibold text-blue-600">
-          {date}
-        </p>
+      <div className="p-8 border-t border-[#E3DFD7]/40 dark:border-[#33302B]/40">
+        {date && (
+          <p className="text-xs font-mono font-bold text-[#3E5C4B] dark:text-[#88B098] uppercase tracking-widest mb-1">
+            {date}
+          </p>
+        )}
 
-        <h3 className="text-3xl font-bold text-gray-900 dark:text-white mt-2">
+        <h3 className="text-2xl md:text-3xl font-black text-[#2C2926] dark:text-[#F5F2ED] mt-2 tracking-tight">
           {title}
         </h3>
 
-        <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+        <p className="mt-4 text-[#615C56] dark:text-[#A39E96] leading-relaxed text-sm">
           {description}
         </p>
 
         <div className="mt-6">
-          <h4 className="font-semibold text-lg mb-2">
+          <h4 className="font-bold text-sm text-[#2C2926] dark:text-[#F5F2ED] uppercase tracking-wider mb-2 font-mono">
             Highlights
           </h4>
 
-          <ul className="list-disc ml-6 text-gray-600 dark:text-gray-300 space-y-2">
+          <ul className="list-disc ml-6 text-[#615C56] dark:text-[#A39E96] space-y-2 text-sm">
             {highlights.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

@@ -104,31 +104,31 @@ const Gallery: React.FC = () => {
   };
 
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 min-h-screen">
+    <section className="pt-32 pb-20 bg-[#F7F5F0] dark:bg-[#171614] min-h-screen transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-4 tracking-tight">
             Gallery
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base text-[#615C56] dark:text-[#A39E96] max-w-3xl mx-auto font-normal">
             Explore the journey of innovation, collaboration, and entrepreneurship through our visual stories
           </p>
         </div>
 
         {/* Current Section Description */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-8 mb-8 border border-gray-100 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+        <div className="bg-white dark:bg-[#24221F] rounded-2xl shadow-[0_4px_20px_rgba(44,41,38,0.03)] p-8 mb-8 border border-[#E3DFD7] dark:border-[#33302B]">
+          <h2 className="text-2xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-3">
             {currentSection.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-[#615C56] dark:text-[#A39E96] text-sm leading-relaxed">
             {currentSection.description}
           </p>
         </div>
 
         {/* Carousel */}
-        <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
-          <div className="relative aspect-[16/9] bg-gray-900 dark:bg-black group">
+        <div className="relative bg-white dark:bg-[#24221F] rounded-2xl shadow-xl overflow-hidden mb-12 border border-[#E3DFD7] dark:border-[#33302B]">
+          <div className="relative aspect-[16/9] bg-[#121110] group">
             <img
               src={currentSection.images[currentImageIndex]}
               alt={`${currentSection.title} - Image ${currentImageIndex + 1}`}

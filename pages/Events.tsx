@@ -9,16 +9,16 @@ const Events: React.FC = () => {
   );
 
   return (
-    <section className="pt-32 pb-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <section className="pt-32 pb-20 bg-[#F7F5F0] dark:bg-[#171614] min-h-screen transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Page Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+          <h1 className="text-5xl md:text-6xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-6 tracking-tight">
             Events
           </h1>
 
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base text-[#615C56] dark:text-[#A39E96] max-w-3xl mx-auto font-normal">
             Explore webinars, startup pitches, incubation programs,
             workshops, hackathons and innovation events organized by CNEST.
           </p>
@@ -26,16 +26,16 @@ const Events: React.FC = () => {
 
         {/* Upcoming Events */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 border-l-4 border-blue-600 pl-4">
+          <h2 className="text-3xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-8 border-l-4 border-[#3E5C4B] dark:border-[#88B098] pl-4 tracking-tight">
             Upcoming Events
           </h2>
 
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-semibold mb-3">
+          <div className="bg-white dark:bg-[#24221F] rounded-2xl border border-[#E3DFD7] dark:border-[#33302B] shadow-[0_4px_20px_rgba(44,41,38,0.03)] p-8">
+            <h3 className="text-2xl font-bold text-[#2C2926] dark:text-[#F5F2ED] mb-3">
               No Upcoming Events
             </h3>
 
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-[#615C56] dark:text-[#A39E96] text-sm">
               There are currently no upcoming events. Please check back later for
               new webinars, workshops and startup programs.
             </p>
@@ -44,7 +44,7 @@ const Events: React.FC = () => {
 
         {/* Past Events */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 border-l-4 border-blue-600 pl-4">
+          <h2 className="text-3xl font-black text-[#2C2926] dark:text-[#F5F2ED] mb-8 border-l-4 border-[#3E5C4B] dark:border-[#88B098] pl-4 tracking-tight">
             Past Events
           </h2>
           <div className="mb-8">
