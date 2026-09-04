@@ -37,7 +37,7 @@ const Team: React.FC = () => {
                   Dr. Arun Sadanand Tigadi
                 </h3>
                 <p className="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-4">
-                  PI CNEST TBI 2.0 | Associate Professor, Dept of E and C
+                  PI , CEO CNEST TBI 2.0 | Associate Professor, Dept of E and C
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
                   With 15+ years of experience and a Ph.D. in Electrical &amp; Electronics Engineering, 
@@ -47,7 +47,7 @@ const Team: React.FC = () => {
                 {/* Contact Details */}
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start mb-5">
                   <a
-                    href="mailto:cnest.mss@kletech.ac.in"
+                    href="arun.tigadi@klescet.ac.in"
                     className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   >
                     <Mail className="w-4 h-4 flex-shrink-0" />

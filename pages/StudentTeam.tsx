@@ -149,7 +149,7 @@ const StudentTeam: React.FC = () => {
                 <img src="/sachin-sabnis.jpg" alt="Sachin Mulgund, CNEST Staff" className="h-24 w-24 rounded-full object-cover object-center" loading="lazy" />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600 dark:text-blue-400">CNEST Operaions Manager</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600 dark:text-blue-400">Operations Manager</p>
                 <h3 className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">Sachin Mulgund</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">Supporting the CNEST team and its innovation community.</p>
                 <a href="https://www.linkedin.com/in/sachinmulgund?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 transition-colors hover:text-cyan-600 dark:text-blue-300 dark:hover:text-cyan-300">
@@ -165,7 +165,7 @@ const StudentTeam: React.FC = () => {
                 <img src="/namita.jpg" alt="Namita Prabhu, CNEST Staff" className="h-24 w-24 rounded-full object-cover object-center" loading="lazy" />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600 dark:text-blue-400">CNEST Outreach Manager</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600 dark:text-blue-400">Outreach Manager</p>
                 <h3 className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">Namita Prabhu</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">Supporting the CNEST team and its innovation community.</p>
                 <a href="https://www.linkedin.com/in/namita-prabhu-ba6523161?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 transition-colors hover:text-cyan-600 dark:text-blue-300 dark:hover:text-cyan-300">

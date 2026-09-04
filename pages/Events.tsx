@@ -152,7 +152,7 @@ const Events: React.FC = () => {
     "/events/innoverse/img3.jpg",
     "/events/innoverse/img4.jpg"
   ]}
-  description="INNOVERSE 2025, organized by KLE CTIE in association with Make in BVB (MiB), encouraged students to showcase creativity, teamwork, and innovation through engaging challenges and collaborative activities."
+  description="INNOVERSE 2025, organized by KLE CNEST in association with Make in BVB (MiB), encouraged students to showcase creativity, teamwork, and innovation through engaging challenges and collaborative activities."
   highlights={[
     "Treasure Hunt",
     "Buildathon",
