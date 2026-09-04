@@ -270,7 +270,6 @@ This project is developed for CNEST - KLE Technological University.
 
 - **Funded by:** Government of Karnataka
 - **Supported by:** KLE Technological University
-- **Part of:** CTIE (Centre for Technology Innovation and Entrepreneurship)
 
 ---
 
