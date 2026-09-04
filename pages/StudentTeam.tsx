@@ -126,7 +126,7 @@ const StudentTeam: React.FC = () => {
               <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300 lg:mx-0">Dr. Tigadi leads CNEST in supporting technology entrepreneurship and innovation in North Karnataka, helping bold ideas grow into meaningful ventures.</p>
               <div className="mt-6 flex flex-col gap-3 text-sm font-medium sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
                 <a href="mailto:cnest.mss@kletech.ac.in" className="inline-flex items-center justify-center gap-2 text-gray-700 transition-colors hover:text-blue-700 dark:text-gray-200 dark:hover:text-blue-300">
-                  <Mail className="h-4 w-4 text-blue-600 dark:text-blue-400" /> cnest.mss@kletech.ac.in
+                  <Mail className="h-4 w-4 text-blue-600 dark:text-blue-400" /> arun.tigadi@klescet.ac.in
                 </a>
                 <a href="tel:08312491836" className="inline-flex items-center justify-center gap-2 text-gray-700 transition-colors hover:text-blue-700 dark:text-gray-200 dark:hover:text-blue-300">
                   <Phone className="h-4 w-4 text-blue-600 dark:text-blue-400" /> 0831-2491836
