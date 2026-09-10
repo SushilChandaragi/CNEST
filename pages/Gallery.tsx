@@ -2,16 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
+interface GalleryImage {
+  full: string;
+  card: string;
+  thumb: string;
+}
+
 interface GallerySection {
   title: string;
   description: string;
-  images: string[];
+  images: GalleryImage[];
 }
 
 const Gallery: React.FC = () => {
   useDocumentMetadata(
     "Innovation Gallery & Event Highlights | CNEST TBI",
-    "Explore CNEST's journey through our innovation gallery, including showcases of incubated startups, ideation workshops, and the official CNEST inauguration."
+    "Explore CNEST's journey through our innovation gallery, including showcases of incubated startups, ideation workshops, and infrastructure highlights."
   );
   const [selectedSection, setSelectedSection] = useState<number>(0);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
@@ -22,54 +28,148 @@ const Gallery: React.FC = () => {
       title: "Innoverse - Innovation Showcase",
       description: "Innoverse brings together brilliant minds, cutting-edge ideas, and transformative solutions. This annual event showcases groundbreaking projects, fosters collaboration, and inspires the next generation of entrepreneurs and innovators.",
       images: [
-        "/PICTURES/Innoverse/DSC_0118.JPG",
-        "/PICTURES/Innoverse/DSC_0212.JPG",
-        "/PICTURES/Innoverse/DSC_0405.JPG",
-        "/PICTURES/Innoverse/DSC_0406.JPG",
-        "/PICTURES/Innoverse/DSC_0433.JPG",
-        "/PICTURES/Innoverse/DSC_0451.JPG",
-        "/PICTURES/Innoverse/DSC_0457.JPG",
-        "/PICTURES/Innoverse/DSC_0466.JPG",
-        "/PICTURES/Innoverse/DSC_0489.JPG",
-        "/PICTURES/Innoverse/DSC_0567.JPG",
-        "/PICTURES/Innoverse/DSC_0569.JPG",
-        "/PICTURES/Innoverse/DSC_0468.JPG",
-        "/PICTURES/Innoverse/DSC_0472.JPG",
-        "/PICTURES/Innoverse/DSC_0477.JPG",
-        "/PICTURES/Innoverse/DSC_0495.JPG",
-        "/PICTURES/Innoverse/DSC_0138.JPG"
+        {
+          full: "/images/gallery/full/innoverse-01.webp",
+          card: "/images/gallery/cards/innoverse-01.webp",
+          thumb: "/images/gallery/thumbs/innoverse-01.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-02.webp",
+          card: "/images/gallery/cards/innoverse-02.webp",
+          thumb: "/images/gallery/thumbs/innoverse-02.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-03.webp",
+          card: "/images/gallery/cards/innoverse-03.webp",
+          thumb: "/images/gallery/thumbs/innoverse-03.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-04.webp",
+          card: "/images/gallery/cards/innoverse-04.webp",
+          thumb: "/images/gallery/thumbs/innoverse-04.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-05.webp",
+          card: "/images/gallery/cards/innoverse-05.webp",
+          thumb: "/images/gallery/thumbs/innoverse-05.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-06.webp",
+          card: "/images/gallery/cards/innoverse-06.webp",
+          thumb: "/images/gallery/thumbs/innoverse-06.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-07.webp",
+          card: "/images/gallery/cards/innoverse-07.webp",
+          thumb: "/images/gallery/thumbs/innoverse-07.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-08.webp",
+          card: "/images/gallery/cards/innoverse-08.webp",
+          thumb: "/images/gallery/thumbs/innoverse-08.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-09.webp",
+          card: "/images/gallery/cards/innoverse-09.webp",
+          thumb: "/images/gallery/thumbs/innoverse-09.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-10.webp",
+          card: "/images/gallery/cards/innoverse-10.webp",
+          thumb: "/images/gallery/thumbs/innoverse-10.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-11.webp",
+          card: "/images/gallery/cards/innoverse-11.webp",
+          thumb: "/images/gallery/thumbs/innoverse-11.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-12.webp",
+          card: "/images/gallery/cards/innoverse-12.webp",
+          thumb: "/images/gallery/thumbs/innoverse-12.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-13.webp",
+          card: "/images/gallery/cards/innoverse-13.webp",
+          thumb: "/images/gallery/thumbs/innoverse-13.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-14.webp",
+          card: "/images/gallery/cards/innoverse-14.webp",
+          thumb: "/images/gallery/thumbs/innoverse-14.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-15.webp",
+          card: "/images/gallery/cards/innoverse-15.webp",
+          thumb: "/images/gallery/thumbs/innoverse-15.webp"
+        },
+        {
+          full: "/images/gallery/full/innoverse-16.webp",
+          card: "/images/gallery/cards/innoverse-16.webp",
+          thumb: "/images/gallery/thumbs/innoverse-16.webp"
+        }
       ]
     },
     {
       title: "Incubated Startups & Events",
       description: "Highlighting our vibrant ecosystem of incubated startups, ideation workshops, and entrepreneurial programs. From IPYatra expeditions to Kimi Motors' innovations, these events showcase the diverse talent and groundbreaking work happening at CNEST.",
       images: [
-        "/PICTURES/Ideation.jpg",
-        "/PICTURES/IPYATRA.jpg",
-        "/PICTURES/Kimi Motors.jpg",
-        "/PICTURES/IMG_4500.JPG"
-      ]
-    },
-    {
-      title: "CNEST Inauguration",
-      description: "A historic moment marking the official launch of CNEST — the Centre for Next Gen Entrepreneurship in Science & Technology — celebrating the beginning of a new era in innovation and entrepreneurship at KLE Technological University.",
-      images: [
-        "/PICTURES/CTIE INNAUGRATION/CTIE news paper.jpeg",
-        "/PICTURES/CTIE INNAUGRATION/DSC_6361.JPG",
-        "/PICTURES/CTIE INNAUGRATION/DSC_6414.JPG",
-        "/PICTURES/CTIE INNAUGRATION/DSC_6458.JPG"
+        {
+          full: "/images/gallery/full/startups-ideation.webp",
+          card: "/images/gallery/cards/startups-ideation.webp",
+          thumb: "/images/gallery/thumbs/startups-ideation.webp"
+        },
+        {
+          full: "/images/gallery/full/startups-ipyatra.webp",
+          card: "/images/gallery/cards/startups-ipyatra.webp",
+          thumb: "/images/gallery/thumbs/startups-ipyatra.webp"
+        },
+        {
+          full: "/images/gallery/full/startups-kimi-motors.webp",
+          card: "/images/gallery/cards/startups-kimi-motors.webp",
+          thumb: "/images/gallery/thumbs/startups-kimi-motors.webp"
+        },
+        {
+          full: "/images/gallery/full/startups-img-4500.webp",
+          card: "/images/gallery/cards/startups-img-4500.webp",
+          thumb: "/images/gallery/thumbs/startups-img-4500.webp"
+        }
       ]
     },
     {
       title: "Infrastructure",
       description: "A glimpse into the world-class infrastructure at CNEST — state-of-the-art labs, collaborative workspaces, and cutting-edge facilities designed to empower the next generation of innovators and entrepreneurs at KLE Technological University.",
       images: [
-        "/PICTURES/DSCN4554.JPG",
-        "/PICTURES/Picsart_26-01-29_12-31-35-741.jpg.jpeg",
-        "/PICTURES/Picsart_26-01-29_12-50-59-334.jpg.jpeg",
-        "/PICTURES/Picsart_26-01-29_15-45-35-194.jpg.jpeg",
-        "/PICTURES/Picsart_26-01-29_15-53-50-815.jpg.jpeg",
-        "/PICTURES/WhatsApp Image 2026-02-24 at 2.45.07 PM.jpeg"
+        {
+          full: "/images/gallery/full/infra-01.webp",
+          card: "/images/gallery/cards/infra-01.webp",
+          thumb: "/images/gallery/thumbs/infra-01.webp"
+        },
+        {
+          full: "/images/gallery/full/infra-02.webp",
+          card: "/images/gallery/cards/infra-02.webp",
+          thumb: "/images/gallery/thumbs/infra-02.webp"
+        },
+        {
+          full: "/images/gallery/full/infra-03.webp",
+          card: "/images/gallery/cards/infra-03.webp",
+          thumb: "/images/gallery/thumbs/infra-03.webp"
+        },
+        {
+          full: "/images/gallery/full/infra-04.webp",
+          card: "/images/gallery/cards/infra-04.webp",
+          thumb: "/images/gallery/thumbs/infra-04.webp"
+        },
+        {
+          full: "/images/gallery/full/infra-05.webp",
+          card: "/images/gallery/cards/infra-05.webp",
+          thumb: "/images/gallery/thumbs/infra-05.webp"
+        },
+        {
+          full: "/images/gallery/full/infra-06.webp",
+          card: "/images/gallery/cards/infra-06.webp",
+          thumb: "/images/gallery/thumbs/infra-06.webp"
+        }
       ]
     }
   ];
@@ -130,7 +230,7 @@ const Gallery: React.FC = () => {
         <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
           <div className="relative aspect-[16/9] bg-gray-900 dark:bg-black group">
             <img
-              src={currentSection.images[currentImageIndex]}
+              src={currentSection.images[currentImageIndex].full}
               alt={`${currentSection.title} - Image ${currentImageIndex + 1}`}
               className="w-full h-full object-contain"
             />
@@ -166,7 +266,7 @@ const Gallery: React.FC = () => {
                   }`}
                 >
                   <img
-                    src={image}
+                    src={image.thumb}
                     alt={`${currentSection.title} Thumbnail ${index + 1}`}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -188,7 +288,7 @@ const Gallery: React.FC = () => {
                 className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gray-100 dark:bg-gray-700 aspect-[4/3]"
               >
                 <img
-                  src={image}
+                  src={image.card}
                   alt={`${currentSection.title} - Image ${index + 1}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -238,7 +338,7 @@ const Gallery: React.FC = () => {
             </button>
             
             <img
-              src={currentSection.images[currentImageIndex]}
+              src={currentSection.images[currentImageIndex].full}
               alt={`${currentSection.title} - Image ${currentImageIndex + 1}`}
               className="max-h-[90vh] max-w-[90vw] object-contain"
             />

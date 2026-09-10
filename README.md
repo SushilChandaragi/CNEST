@@ -65,27 +65,25 @@ npm run preview
 
 ## 📸 Gallery Configuration
 
-The gallery automatically displays images from the `PICTURES` folder with three categories:
+The gallery automatically displays optimized WebP images across categories (Innoverse, Incubated Startups & Events, and Infrastructure):
 
-### Image Paths (Update these with your actual images):
+### Image Categories:
 
-**CTIE Inauguration:**
-- `/PICTURES/CTIE INNAUGRATION/CTIE news paper.jpeg`
-- `/PICTURES/CTIE INNAUGRATION/DSC_6361.JPG`
-- `/PICTURES/CTIE INNAUGRATION/DSC_6414.JPG`
-- `/PICTURES/CTIE INNAUGRATION/DSC_6458.JPG`
-
-**Innoverse:**
-- `/PICTURES/Innoverse/DSC_0118.JPG`
-- `/PICTURES/Innoverse/DSC_0212.JPG`
-- `/PICTURES/Innoverse/DSC_0405.JPG`
+**Innoverse - Innovation Showcase:**
+- `/images/gallery/full/innoverse-01.webp` (Full display / Lightbox)
+- `/images/gallery/cards/innoverse-01.webp` (Grid view)
+- `/images/gallery/thumbs/innoverse-01.webp` (Thumbnail navigation)
 - And more...
 
 **Incubated Startups & Events:**
-- `/PICTURES/Ideation.jpg`
-- `/PICTURES/IPYATRA.jpg`
-- `/PICTURES/Kimi Motors.jpg`
-- `/PICTURES/IMG_4500.JPG`
+- `/images/gallery/full/startups-ideation.webp`
+- `/images/gallery/full/startups-ipyatra.webp`
+- `/images/gallery/full/startups-kimi-motors.webp`
+- `/images/gallery/full/startups-img-4500.webp`
+
+**Infrastructure:**
+- `/images/gallery/full/infra-01.webp`
+- And more...
 
 To add or remove images, edit the `galleryData` array in `/pages/Gallery.tsx`.
 
@@ -163,10 +161,13 @@ CNEST 1ST DRAFT/
 │   ├── Gallery.tsx          # Gallery with carousel
 │   ├── Careers.tsx          # Careers/job listings
 │   └── ContactPage.tsx      # Contact page with map
-├── PICTURES/
-│   ├── CTIE INNAUGRATION/   # Inauguration photos
-│   ├── Innoverse/           # Innovation showcase photos
-│   └── ...                  # Other event photos
+├── public/
+│   ├── images/
+│   │   └── gallery/         # Optimized WebP gallery derivatives
+│   │       ├── full/        # Carousel and Lightbox full display
+│   │       ├── cards/       # Photo grid view
+│   │       └── thumbs/      # Carousel thumbnail navigation
+│   └── PICTURES/            # Event and infrastructure photo archives
 ├── App.tsx                  # Main app with routing
 ├── index.tsx                # Entry point
 ├── constants.tsx            # Navigation & content constants
@@ -269,7 +270,6 @@ This project is developed for CNEST - KLE Technological University.
 
 - **Funded by:** Government of Karnataka
 - **Supported by:** KLE Technological University
-- **Part of:** CTIE (Centre for Technology Innovation and Entrepreneurship)
 
 ---
 

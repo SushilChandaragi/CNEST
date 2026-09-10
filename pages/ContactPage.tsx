@@ -183,6 +183,8 @@ const ContactPage: React.FC = () => {
                     <option value="">Select inquiry type</option>
                     <option value="Incubation Inquiry">🚀 Incubation Inquiry</option>
                     <option value="Partnership Opportunity">🤝 Partnership Opportunity</option>
+                    <option value="Mentor">🎓 Mentor</option>
+                    <option value="Business Partnership">🤝 Business Partnership</option>
                     <option value="General Inquiry">💬 General Inquiry</option>
                     <option value="Other">📋 Other</option>
                   </select>
@@ -324,7 +326,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-bold text-gray-900 dark:text-white text-xs">WhatsApp Channel</p>
-                    <p className="text-gray-500 dark:text-gray-400 text-[10px] mt-0.5">KLE CTIE Community</p>
+                    <p className="text-gray-500 dark:text-gray-400 text-[10px] mt-0.5">KLE CNEST Community</p>
                   </div>
                 </a>
 
@@ -365,7 +367,7 @@ const ContactPage: React.FC = () => {
               </div>
             </div>
             <p className="text-blue-100 text-xs sm:text-right leading-relaxed max-w-md">
-              Located on Angol Main Road, Udyambag, Belagavi. Visitors can navigate directly to the CTIE Incubation Block.
+              Located on Angol Main Road, Udyambag, Belagavi. Visitors can navigate directly to the CNEST Incubation Block.
             </p>
           </div>
           <div className="aspect-[21/9] w-full min-h-[300px]">
