@@ -13,6 +13,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Events', href: '/events' },
   { label: 'Team', href: '/team' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },

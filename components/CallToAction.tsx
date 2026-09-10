@@ -23,7 +23,7 @@ const CallToAction: React.FC = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Visit Us</h3>
                   <p className="text-blue-100 dark:text-gray-300 leading-relaxed">
-                    CNEST Office,1st floor<br />
+                    CNEST Office<br />
                     KLE Technological University<br />
                     Udyambagh, Belgaum, Karnataka
                   </p>

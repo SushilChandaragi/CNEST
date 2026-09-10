@@ -76,15 +76,15 @@ const WhoWeServe: React.FC = () => {
             return (
               <div
                 key={i}
-                className={`flex items-start gap-4 p-5 rounded-xl border-l-4 transition-colors duration-300 ${colorMap[item.color]}`}
+                className="group relative bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden"
               >
-                <div className={`flex-shrink-0 w-11 h-11 ${iconMap[item.color]} rounded-lg flex items-center justify-center`}>
+                {/* Subtle colour dot accent top-right */}
+                <div className={`absolute top-4 right-4 w-2 h-2 rounded-full ${iconMap[item.color]} opacity-60`} aria-hidden="true" />
+                <div className={`inline-flex items-center justify-center w-11 h-11 ${iconMap[item.color]} rounded-xl mb-4`}>
                   <Icon className="w-5 h-5 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{item.desc}</p>
-                </div>
+                <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{item.desc}</p>
               </div>
             );
           })}
