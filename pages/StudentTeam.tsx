@@ -173,6 +173,32 @@ const StudentTeam: React.FC = () => {
               </div>
             </div>
           </article>
+          <article className="group relative min-h-[11.5rem] overflow-hidden rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-cyan-50 p-8 shadow-sm transition-shadow hover:shadow-md dark:border-blue-900/50 dark:from-blue-950/30 dark:via-gray-800 dark:to-cyan-950/20">
+            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-blue-400/15 blur-2xl" aria-hidden="true" />
+            <div className="relative flex items-center gap-5">
+              <div className="shrink-0 rounded-full bg-gradient-to-br from-blue-600 via-cyan-500 to-violet-500 p-[3px] shadow-lg shadow-blue-500/20">
+                <img src="office_accountant.jpeg" alt="Sushma Ladi, Office Accountant" className="h-24 w-24 rounded-full object-cover object-center" loading="lazy" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600 dark:text-blue-400">Office Accountant</p>
+                <h3 className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">Sushma Ladi</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">Supporting the CNEST team and its innovation community.</p>
+              </div>
+            </div>
+          </article>
+          <article className="group relative min-h-[11.5rem] overflow-hidden rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50 via-white to-orange-50 p-8 shadow-sm transition-shadow hover:shadow-md dark:border-violet-900/50 dark:from-violet-950/30 dark:via-gray-800 dark:to-orange-950/20">
+            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-fuchsia-400/15 blur-2xl" aria-hidden="true" />
+            <div className="relative flex items-center gap-5">
+              <div className="shrink-0 rounded-full bg-gradient-to-br from-violet-600 via-fuchsia-500 to-orange-500 p-[3px] shadow-lg shadow-fuchsia-500/20">
+                <img src="office_admin.jpeg" alt="Udaykumar Motagi, Office Admin" className="h-24 w-24 rounded-full object-cover object-center" loading="lazy" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-violet-600 dark:text-violet-400">Office Admin</p>
+                <h3 className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">Udaykumar Motagi</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">Supporting the CNEST team and its innovation community.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>;
     }
