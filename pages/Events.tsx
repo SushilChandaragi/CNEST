@@ -58,6 +58,81 @@ const Events: React.FC = () => {
   </p>
 </div>
 
+<EventCard
+  title="Student Orientation: Welcoming the Next Generation of Innovators"
+  date="4 September 2026"
+  images={[
+    "/events/4sept/DSC_0249.webp",
+    "/events/4sept/DSC_0262.webp",
+    "/events/4sept/DSC_0988.webp",
+    "/events/4sept/DSC_0990.webp",
+    "/events/4sept/DSC_0998.webp",
+    "/events/4sept/DSC_1026.webp"
+  ]}
+  description="As part of the Student Orientation, KLE-CNEST introduced the fresh batch of engineering students to the exciting world of innovation, entrepreneurship, and startups. The session gave students an insight into the CNEST ecosystem, its initiatives, and opportunities for student innovators to take their ideas beyond the classroom towards real-world impact. Students were encouraged to identify problems, build solutions, experiment fearlessly, and embrace an entrepreneurial mindset from the beginning of their engineering journey."
+  highlights={[
+    "CNEST Ecosystem Introduction",
+    "Innovation and Entrepreneurship",
+    "Student Innovator Opportunities",
+    "From Ideas to Real-World Impact"
+  ]}
+/>
+<EventCard
+  title="HDB Techceleration 2026: One Day. A Region's Worth of Ideas!"
+  date="4 September 2026"
+  images={[
+    "/events/hdb-techceleration-2026/1788507397826.webp",
+    "/events/hdb-techceleration-2026/1788507397936.webp",
+    "/events/hdb-techceleration-2026/1788507397975--1-.webp",
+    "/events/hdb-techceleration-2026/1788507397975.webp",
+    "/events/hdb-techceleration-2026/1788507398296.webp",
+    "/events/hdb-techceleration-2026/1788507398879.webp"
+  ]}
+  description="Team KLE-CNEST wrapped up an incredible day at HDB Techceleration 2026 in Hubballi, Karnataka Digital Economy Mission's flagship event bringing together startups, investors, academia, and industry leaders from across the Hubballi-Dharwad-Belagavi region. The CNEST booth sparked conversations with founders, mentors, and ecosystem builders working to make this corridor a genuine innovation hub."
+  highlights={[
+    "Startup and Investor Networking",
+    "Founder and Mentor Conversations",
+    "Hubballi-Dharwad-Belagavi Innovation Corridor",
+    "KDEM Ecosystem Collaboration"
+  ]}
+/>
+<EventCard
+  title="CNEST Faculty Innovation Connect"
+  date="30 July 2026"
+  images={[
+    "/events/faculty-connect/1785412639678--1-.webp",
+    "/events/faculty-connect/1785412639678.webp",
+    "/events/faculty-connect/1785412639949.webp",
+    "/events/faculty-connect/1785412639971.webp",
+    "/events/faculty-connect/1785412640232.webp"
+  ]}
+  description="KLE-CNEST embarked on a journey to strengthen the culture of innovation, research, and entrepreneurship at KLE Technological University Dr. M. S. Sheshgiri Campus Belagavi through CNEST Faculty Innovation Connect. Faculty members came together to explore opportunities in innovation, incubation, industry collaboration, intellectual property, and commercialization, laying the foundation for a stronger innovation ecosystem."
+  highlights={[
+    "Faculty Innovation and Research",
+    "Incubation and Commercialization",
+    "Industry Collaboration",
+    "Intellectual Property Opportunities"
+  ]}
+/>
+<EventCard
+  title="KLE-CNEST Strengthens Industry Collaboration"
+  date="25 July 2026"
+  images={[
+    "/events/25-7-2026/IMG_4171.webp",
+    "/events/25-7-2026/IMG_4202.webp",
+    "/events/25-7-2026/IMG_4203.webp",
+    "/events/25-7-2026/IMG_4204.webp",
+    "/events/25-7-2026/IMG_4205.webp"
+  ]}
+  description="KLE-CNEST was honored to host Dr. Aloknath De, Founder and CEO of TechCrafter.CPS, along with Mr. Anindya Saha, Vice President, Wireless, Tejas Networks, Bangalore. The visit sparked insightful discussions on emerging technologies, startup innovation, and collaboration opportunities to empower deep-tech entrepreneurship and strengthen the innovation ecosystem."
+  highlights={[
+    "Emerging Technology Discussions",
+    "Deep-Tech Entrepreneurship",
+    "Startup Innovation",
+    "Industry Collaboration Opportunities"
+  ]}
+/>
+
           <EventCard
   title="Initial Startup Pitch Presentation"
   images={[
