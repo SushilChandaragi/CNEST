@@ -163,12 +163,12 @@ const Certificates: React.FC = () => {
         {/* Dynamic State View */}
         {!certData ? (
           /* STATE 1: WIDE OPEN SEARCH BAR */
-          <div className="w-full max-w-3xl mx-auto">
+          <div className="w-full max-w-2xl mx-auto">
             <form onSubmit={handleSearch} className="space-y-4">
-              <div className="flex flex-col sm:flex-row items-stretch gap-3 p-2 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
-                <div className="relative flex-1 flex items-center">
-                  <div className="absolute left-4 text-gray-400 pointer-events-none">
-                    <GraduationCap className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              <div className="flex flex-col sm:flex-row items-center gap-2 p-2 bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 transition-all focus-within:ring-2 focus-within:ring-blue-500/30 focus-within:border-blue-500">
+                <div className="relative w-full flex items-center">
+                  <div className="absolute left-4.5 flex items-center pointer-events-none text-blue-600 dark:text-blue-400 z-10">
+                    <GraduationCap className="w-6 h-6" />
                   </div>
                   <input
                     id="srnInput"
@@ -179,14 +179,14 @@ const Certificates: React.FC = () => {
                     autoComplete="off"
                     autoCapitalize="characters"
                     disabled={isLoading}
-                    className="w-full pl-13 pr-4 py-4 rounded-xl bg-transparent text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 font-mono font-bold text-lg sm:text-xl focus:outline-none uppercase"
+                    className="w-full pl-14 pr-4 py-3.5 bg-transparent text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 placeholder:font-normal placeholder:normal-case font-mono font-bold text-base sm:text-lg focus:outline-none uppercase"
                   />
                 </div>
                 
                 <button
                   type="submit"
                   disabled={isLoading || !srnInput.trim()}
-                  className="py-4 px-8 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-bold text-base shadow-md shadow-blue-500/25 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer shrink-0"
+                  className="w-full sm:w-auto py-3.5 px-7 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-[0.98] text-white font-bold text-base shadow-md shadow-blue-500/25 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer shrink-0"
                 >
                   {isLoading ? (
                     <>

@@ -37,8 +37,8 @@ const CertificateClaimBanner: React.FC = () => {
           <div className="w-full lg:max-w-md">
             <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-2">
               <div className="relative flex-1">
-                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
-                  <GraduationCap className="w-5 h-5 text-blue-400" />
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-blue-300">
+                  <GraduationCap className="w-5 h-5 text-blue-300" />
                 </div>
                 <input
                   type="text"
@@ -46,7 +46,7 @@ const CertificateClaimBanner: React.FC = () => {
                   onChange={(e) => setSrn(e.target.value.toUpperCase())}
                   placeholder="Enter SRN (e.g. 02FE23BCS136)"
                   autoCapitalize="characters"
-                  className="w-full pl-11 pr-4 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 focus:bg-white/20 border border-blue-300/30 text-white placeholder-blue-200 font-mono font-bold text-base focus:outline-none focus:ring-2 focus:ring-blue-400 backdrop-blur-md uppercase transition-all"
+                  className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 focus:bg-white/20 border border-blue-300/30 text-white placeholder:text-blue-200/70 placeholder:font-normal placeholder:normal-case font-mono font-bold text-base focus:outline-none focus:ring-2 focus:ring-blue-400 backdrop-blur-md uppercase transition-all"
                 />
               </div>
 
