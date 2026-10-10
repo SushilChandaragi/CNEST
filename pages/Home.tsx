@@ -1,10 +1,10 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import CertificateClaimBanner from '../components/CertificateClaimBanner';
 import About from '../components/About';
 import WhoWeServe from '../components/WhoWeServe';
 import Services from '../components/Services';
 import Achievements from '../components/Achievements';
-
 import CallToAction from '../components/CallToAction';
 import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 
@@ -16,12 +16,12 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
+      <CertificateClaimBanner />
       <About />
       <WhoWeServe />
       <Achievements />
       <Services />
       <CallToAction />
-
     </>
   );
 };

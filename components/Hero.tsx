@@ -17,6 +17,21 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
         <div className="sm:max-w-2xl">
+          {/* Orientation Certificate Notification Ribbon */}
+          <div className="mb-6 inline-block">
+            <Link
+              to="/certificates"
+              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-blue-600/30 hover:bg-blue-600/50 border border-blue-400/40 text-blue-100 text-xs sm:text-sm font-medium backdrop-blur-md transition-all duration-300 shadow-sm group hover:border-blue-300"
+            >
+              <span className="flex h-2 w-2 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+              </span>
+              <span>🎓 Attended <strong>FLEDGE &apos;26 Orientation</strong>? Claim your certificate</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-blue-300" />
+            </Link>
+          </div>
+
           <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl mb-6">
             Centre for Next Gen <span className="text-blue-400 dark:text-blue-300">Entrepreneurship</span> in Science & Technology
           </h1>

@@ -1,26 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { 
   Download, 
   Search, 
   Share2, 
   Sparkles, 
-  CheckCircle2, 
   AlertCircle, 
   ArrowLeft, 
   Linkedin, 
-  Instagram, 
   Loader2,
   ExternalLink,
   GraduationCap,
   Copy,
-  Check,
-  Flame,
-  MessageSquare
+  Check
 } from 'lucide-react';
 import { useDocumentMetadata } from '../hooks/useDocumentMetadata';
 import { CERTIFICATE_ENDPOINT } from '../constants';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 interface CertificateResult {
   found: boolean;
@@ -37,11 +33,21 @@ const Certificates: React.FC = () => {
     "Claim and download your official participation certificate for FLEDGE '26 by C-NEST Foundation at KLE Technological University."
   );
 
+  const [searchParams] = useSearchParams();
   const [srnInput, setSrnInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [certData, setCertData] = useState<CertificateResult | null>(null);
   const [copiedLink, setCopiedLink] = useState(false);
+
+  // Auto-verify if SRN is in URL query parameter
+  useEffect(() => {
+    const urlSrn = searchParams.get('srn');
+    if (urlSrn) {
+      setSrnInput(urlSrn.toUpperCase());
+      performVerification(urlSrn.toUpperCase());
+    }
+  }, [searchParams]);
 
   const triggerCelebration = () => {
     try {
@@ -73,12 +79,11 @@ const Certificates: React.FC = () => {
     }
   };
 
-  const handleSearch = async (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
-    const cleanSrn = srnInput.trim().toUpperCase();
+  const performVerification = async (targetSrn: string) => {
+    const cleanSrn = targetSrn.trim().toUpperCase();
 
     if (!cleanSrn) {
-      setErrorMessage("Please type in your SRN to continue.");
+      setErrorMessage("Please enter your SRN to continue.");
       return;
     }
 
@@ -115,6 +120,11 @@ const Certificates: React.FC = () => {
     }
   };
 
+  const handleSearch = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    performVerification(srnInput);
+  };
+
   const handleReset = () => {
     setSrnInput('');
     setErrorMessage(null);
@@ -131,64 +141,65 @@ const Certificates: React.FC = () => {
   };
 
   const getLinkedInShareUrl = () => {
-    const studentName = certData?.name || "Participant";
     const shareText = `Excited to receive my official participation certificate for FLEDGE '26 organized by C-NEST Foundation at KLE Tech! 🎓🚀\n\nLooking forward to innovating, building projects, and growing with the C-NEST startup ecosystem! #FLEDGE26 #CNEST #KLETech #Entrepreneurship #Innovation`;
     return `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareText)}`;
   };
 
   return (
-    <div className="pt-28 pb-24 bg-gradient-to-b from-blue-50/70 via-white to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 min-h-screen text-gray-900 dark:text-white transition-colors duration-300">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-32 pb-24 bg-gradient-to-b from-blue-50/50 via-white to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 min-h-screen text-gray-900 dark:text-white transition-colors duration-300">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header Badge */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 font-bold text-xs uppercase tracking-wider mb-4 border border-amber-300/80 dark:border-amber-700/50 shadow-sm animate-pulse">
-            <Flame className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-            <span>FLEDGE &apos;26 • Orientation Pass &amp; Certificate</span>
-          </div>
-          
-          <h1 className="text-4xl sm:text-5xl font-black tracking-tight mb-3">
+        {/* Clean Wide Header */}
+        <div className="text-center mb-10">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-4">
             Claim Your <span className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">FLEDGE &apos;26</span> Certificate
           </h1>
           
-          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
             You showed up, took part in the energy, and took your first step with C-NEST. Enter your SRN below to grab your official PDF certificate.
           </p>
         </div>
 
         {/* Dynamic State View */}
         {!certData ? (
-          /* STATE 1: SEARCH CARD */
-          <div className="bg-white dark:bg-gray-800/95 rounded-3xl shadow-xl border border-gray-200/90 dark:border-gray-700/80 p-6 sm:p-10 transition-all duration-300 max-w-xl mx-auto relative overflow-hidden">
-            
-            <div className="space-y-6">
-              <div>
-                <label htmlFor="srnInput" className="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">
-                  Enter your University SRN
-                </label>
-                <div className="relative rounded-2xl shadow-sm">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
-                    <GraduationCap className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+          /* STATE 1: WIDE OPEN SEARCH BAR */
+          <div className="w-full max-w-3xl mx-auto">
+            <form onSubmit={handleSearch} className="space-y-4">
+              <div className="flex flex-col sm:flex-row items-stretch gap-3 p-2 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+                <div className="relative flex-1 flex items-center">
+                  <div className="absolute left-4 text-gray-400 pointer-events-none">
+                    <GraduationCap className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   </div>
                   <input
                     id="srnInput"
                     type="text"
                     value={srnInput}
                     onChange={(e) => setSrnInput(e.target.value.toUpperCase())}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') handleSearch();
-                    }}
-                    placeholder="e.g. 02FE23BCS136"
+                    placeholder="Enter University SRN (e.g. 02FE23BCS136)"
                     autoComplete="off"
                     autoCapitalize="characters"
                     disabled={isLoading}
-                    className="block w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 font-mono font-bold text-lg focus:ring-4 focus:ring-blue-500/20 focus:border-blue-600 dark:focus:border-blue-400 transition-all uppercase"
+                    className="w-full pl-13 pr-4 py-4 rounded-xl bg-transparent text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 font-mono font-bold text-lg sm:text-xl focus:outline-none uppercase"
                   />
                 </div>
-                <div className="mt-2 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                  <span>Works in lowercase or uppercase</span>
-                  <span>138 Certificates Issued</span>
-                </div>
+                
+                <button
+                  type="submit"
+                  disabled={isLoading || !srnInput.trim()}
+                  className="py-4 px-8 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-bold text-base shadow-md shadow-blue-500/25 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer shrink-0"
+                >
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      <span>Checking...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Search className="w-5 h-5" />
+                      <span>Get Certificate 🚀</span>
+                    </>
+                  )}
+                </button>
               </div>
 
               {errorMessage && (
@@ -206,45 +217,13 @@ const Certificates: React.FC = () => {
                   </div>
                 </div>
               )}
-
-              <button
-                type="button"
-                onClick={() => handleSearch()}
-                disabled={isLoading || !srnInput.trim()}
-                className="w-full py-4 px-6 rounded-2xl bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-bold text-base shadow-lg shadow-blue-500/25 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer"
-              >
-                {isLoading ? (
-                  <>
-                    <Loader2 className="w-5 h-5 animate-spin" />
-                    <span>Checking attendance...</span>
-                  </>
-                ) : (
-                  <>
-                    <Search className="w-5 h-5" />
-                    <span>Get My Certificate 🚀</span>
-                  </>
-                )}
-              </button>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-800 flex items-center justify-center gap-6 text-xs text-gray-500 dark:text-gray-400">
-              <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                Verified Attendance
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-amber-500" />
-                Instant PDF Download
-              </span>
-            </div>
+            </form>
           </div>
         ) : (
-          /* STATE 2: VERIFIED CELEBRATION & DOWNLOAD CARD */
-          <div className="space-y-6 max-w-xl mx-auto">
+          /* STATE 2: VERIFIED CELEBRATION & DOWNLOAD CARD (WIDE) */
+          <div className="space-y-6 max-w-2xl mx-auto">
             
-            {/* Ticket / Pass Style Card */}
-            <div className="bg-white dark:bg-gray-800/95 rounded-3xl shadow-2xl border-2 border-blue-500/30 dark:border-blue-500/40 p-6 sm:p-8 relative overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 sm:p-8 relative overflow-hidden">
               
               {/* Confetti & Sparkles Top */}
               <div className="text-center mb-6">
@@ -261,7 +240,7 @@ const Certificates: React.FC = () => {
               </div>
 
               {/* Student Pass Chip */}
-              <div className="p-4 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-900/80 border border-blue-100 dark:border-gray-700 mb-6 flex flex-wrap items-center justify-between gap-3">
+              <div className="p-4 rounded-2xl bg-blue-50 dark:bg-gray-900/80 border border-blue-100 dark:border-gray-700 mb-6 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <span className="text-xs uppercase font-bold text-gray-500 dark:text-gray-400 block">
                     SRN
