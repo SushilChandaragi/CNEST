@@ -35,22 +35,55 @@ const Header: React.FC = () => {
             </div>
           </Link>
           
-          <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-baseline space-x-8">
-              {NAV_ITEMS.map((item) => (
-                <Link
-                  key={item.label}
-                  to={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors ${
-                    location.pathname === item.href
-                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-900'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+          <div className="hidden lg:flex items-center gap-3 xl:gap-4">
+            <div className="flex items-center space-x-2 xl:space-x-4">
+              {NAV_ITEMS.map((item) => {
+                const isCert = item.href === '/certificates';
+                const isActive = location.pathname === item.href;
+                
+                if (isCert) {
+                  return (
+                    <Link
+                      key={item.label}
+                      to={item.href}
+                      className={`ml-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-sm ${
+                        isActive
+                          ? 'bg-blue-600 text-white shadow-blue-500/30'
+                          : 'bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white dark:bg-blue-950/60 dark:text-blue-300 dark:hover:bg-blue-600 dark:hover:text-white border border-blue-200/80 dark:border-blue-800/80'
+                      }`}
+                    >
+                      <span className="text-sm">🎓</span>
+                      <span>{item.label}</span>
+                    </Link>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className={`px-2.5 py-1.5 rounded-md text-sm font-semibold transition-colors ${
+                      isActive
+                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                        : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-900'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </div>
+            <DarkModeToggle />
+          </div>
+
+          <div className="hidden md:flex lg:hidden items-center gap-2">
+            <Link
+              to="/certificates"
+              className="px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-600 text-white flex items-center gap-1 shadow-sm"
+            >
+              <span>🎓</span>
+              <span>Certificates</span>
+            </Link>
             <DarkModeToggle />
           </div>
 

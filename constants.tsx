@@ -14,10 +14,10 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About', href: '/about' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Events', href: '/events' },
-  { label: 'Certificates', href: '/certificates' },
   { label: 'Team', href: '/team' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Certificates', href: '/certificates' },
 ];
 
 export const SERVICES: ServiceItem[] = [
