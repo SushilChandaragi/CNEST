@@ -14,6 +14,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About', href: '/about' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Events', href: '/events' },
+  { label: 'Certificates', href: '/certificates' },
   { label: 'Team', href: '/team' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
@@ -54,3 +55,6 @@ export const SERVICES: ServiceItem[] = [
 
 // Paste the Google Apps Script Web App URL after deployment
 export const CONTACT_FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxA-z4x3MrvQS6BDDshhooCx0NYpOpzntrseaYLXsPF6zLl0nIRvI8nsdlO7eCtNx44mA/exec";
+
+// Google Apps Script Web App URL for FLEDGE '26 Certificate verification
+export const CERTIFICATE_ENDPOINT = "PASTE_YOUR_DEPLOYED_WEB_APP_URL_HERE";
