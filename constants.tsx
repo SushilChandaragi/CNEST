@@ -57,4 +57,4 @@ export const SERVICES: ServiceItem[] = [
 export const CONTACT_FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxA-z4x3MrvQS6BDDshhooCx0NYpOpzntrseaYLXsPF6zLl0nIRvI8nsdlO7eCtNx44mA/exec";
 
 // Google Apps Script Web App URL for FLEDGE '26 Certificate verification
-export const CERTIFICATE_ENDPOINT = "PASTE_YOUR_DEPLOYED_WEB_APP_URL_HERE";
+export const CERTIFICATE_ENDPOINT = "https://script.google.com/macros/s/AKfycbyqKzVS-qq1dPByDEFnPsqM2nZeRayVLYoYeKBEQxrqPAmnNyzgxg8jRlJplKeTsws0/exec";
