@@ -132,6 +132,10 @@ const Certificates: React.FC = () => {
     setCopiedLink(false);
   };
 
+  const [copiedCaption, setCopiedCaption] = useState(false);
+
+  const LINKEDIN_POST_TEXT = `Thrilled to receive my official certificate for FLEDGE '26 by C-NEST Foundation! Incredible energy, inspiring sessions, and a great start to my entrepreneurial journey at KLE Tech. 🚀✨ #FLEDGE26 #CNEST #KLETech #Innovation #Entrepreneurship`;
+
   const copyCertLink = () => {
     if (certData?.certUrl) {
       navigator.clipboard.writeText(certData.certUrl);
@@ -140,9 +144,22 @@ const Certificates: React.FC = () => {
     }
   };
 
-  const getLinkedInShareUrl = () => {
-    const shareText = `Excited to receive my official participation certificate for FLEDGE '26 organized by C-NEST Foundation at KLE Tech! 🎓🚀\n\nLooking forward to innovating, building projects, and growing with the C-NEST startup ecosystem! #FLEDGE26 #CNEST #KLETech #Entrepreneurship #Innovation`;
-    return `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareText)}`;
+  const handleShareOnLinkedIn = async () => {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(LINKEDIN_POST_TEXT);
+        setCopiedCaption(true);
+        setTimeout(() => setCopiedCaption(false), 4000);
+      }
+    } catch (e) {
+      console.warn("Could not copy caption to clipboard automatically:", e);
+    }
+
+    const encodedText = encodeURIComponent(LINKEDIN_POST_TEXT);
+    const targetUrl = `https://www.linkedin.com/feed/?shareActive=true&text=${encodedText}`;
+    
+    // Open LinkedIn in a new tab/window
+    window.open(targetUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -307,15 +324,31 @@ const Certificates: React.FC = () => {
                   </p>
                 </div>
 
-                <a
-                  href={getLinkedInShareUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-[#0A66C2] hover:bg-[#004182] active:scale-[0.99] text-white font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2"
-                >
-                  <Linkedin className="w-4 h-4 fill-current" />
-                  <span>Share on LinkedIn</span>
-                </a>
+                <div className="space-y-3">
+                  {/* Option 1 Caption Box */}
+                  <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-900/60 border border-gray-200 dark:border-gray-700 text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="italic select-all leading-normal">&ldquo;{LINKEDIN_POST_TEXT}&rdquo;</p>
+                  </div>
+
+                  {/* Share CTA */}
+                  <button
+                    type="button"
+                    onClick={handleShareOnLinkedIn}
+                    className="w-full py-3.5 px-4 rounded-xl bg-[#0A66C2] hover:bg-[#004182] active:scale-[0.99] text-white font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    <Linkedin className="w-4 h-4 fill-current" />
+                    <span>Share on LinkedIn</span>
+                    <ExternalLink className="w-3.5 h-3.5 opacity-75" />
+                  </button>
+
+                  {/* Copy confirmation toast */}
+                  {copiedCaption && (
+                    <div className="p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold flex items-center justify-center gap-2">
+                      <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                      <span>Caption copied to clipboard! Just paste it into your post ✨</span>
+                    </div>
+                  )}
+                </div>
 
                 {/* Social community chips */}
                 <div className="pt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
