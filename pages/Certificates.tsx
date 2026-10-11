@@ -30,7 +30,7 @@ interface CertificateResult {
 const Certificates: React.FC = () => {
   useDocumentMetadata(
     "FLEDGE '26 Certificates | CNEST",
-    "Claim and download your official participation certificate for FLEDGE '26 by C-NEST Foundation at KLE Technological University."
+    "Claim and download your official participation certificate for FLEDGE '26 by CNEST Foundation at KLE Technological University."
   );
 
   const [searchParams] = useSearchParams();
@@ -39,6 +39,9 @@ const Certificates: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [certData, setCertData] = useState<CertificateResult | null>(null);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [copiedCaption, setCopiedCaption] = useState(false);
+
+  const LINKEDIN_POST_TEXT = `Thrilled to receive my official certificate for FLEDGE '26 by @kle-cnest Foundation! Incredible energy, inspiring sessions, and a great start to my entrepreneurial journey at KLE Tech. 🚀✨ #FLEDGE26 #CNEST #KLETech #Innovation #Entrepreneurship`;
 
   // Auto-verify if SRN is in URL query parameter
   useEffect(() => {
@@ -132,10 +135,6 @@ const Certificates: React.FC = () => {
     setCopiedLink(false);
   };
 
-  const [copiedCaption, setCopiedCaption] = useState(false);
-
-  const LINKEDIN_POST_TEXT = `Thrilled to receive my official certificate for FLEDGE '26 by C-NEST Foundation! Incredible energy, inspiring sessions, and a great start to my entrepreneurial journey at KLE Tech. 🚀✨ #FLEDGE26 #CNEST #KLETech #Innovation #Entrepreneurship`;
-
   const copyCertLink = () => {
     if (certData?.certUrl) {
       navigator.clipboard.writeText(certData.certUrl);
@@ -173,7 +172,7 @@ const Certificates: React.FC = () => {
           </h1>
           
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            You showed up, took part in the energy, and took your first step with C-NEST. Enter your SRN below to grab your official PDF certificate.
+            You showed up, took part in the energy, and took your first step with CNEST. Enter your SRN below to grab your official PDF certificate.
           </p>
         </div>
 
@@ -320,16 +319,11 @@ const Certificates: React.FC = () => {
                     Share the achievement on LinkedIn 🚀
                   </h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                    Tag <strong>@C-NEST Foundation</strong> and show your network you were there.
+                    Tag <strong>@kle-cnest</strong> and show your network you were there.
                   </p>
                 </div>
 
                 <div className="space-y-3">
-                  {/* Option 1 Caption Box */}
-                  <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-900/60 border border-gray-200 dark:border-gray-700 text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
-                    <p className="italic select-all leading-normal">&ldquo;{LINKEDIN_POST_TEXT}&rdquo;</p>
-                  </div>
-
                   {/* Share CTA */}
                   <button
                     type="button"
@@ -345,14 +339,14 @@ const Certificates: React.FC = () => {
                   {copiedCaption && (
                     <div className="p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold flex items-center justify-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                      <span>Caption copied to clipboard! Just paste it into your post ✨</span>
+                      <span>Post caption copied to clipboard! Just paste it into your post ✨</span>
                     </div>
                   )}
                 </div>
 
                 {/* Social community chips */}
                 <div className="pt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                  <span>Connect with C-NEST:</span>
+                  <span>Connect with CNEST:</span>
                   <div className="flex items-center gap-3">
                     <a
                       href="https://www.linkedin.com/company/kle-cnest/"
